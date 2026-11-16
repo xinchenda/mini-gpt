@@ -1,0 +1,22 @@
+{
+  "base_manifest": "../corpus_manifest_12books_sherlock.json",
+  "train": [
+    [98, "tale_of_two_cities", "It was the best of times"],
+    [1400, "great_expectations", "My father’s family name being Pirrip"],
+    [766, "david_copperfield", "Whether I shall turn out to be the hero of my own life"],
+    [768, "wuthering_heights", "1801—I have just returned from a visit"],
+    [1260, "jane_eyre", "There was no possibility of taking a walk that day"],
+    [161, "sense_sensibility", "The family of Dashwood had long been settled in Sussex"],
+    [158, "emma", "Emma Woodhouse, handsome, clever, and rich"],
+    [2701, "moby_dick", "Call me Ishmael. Some years ago"],
+    [76, "huckleberry_finn", "You don’t know about me without you have read a book"],
+    [74, "tom_sawyer", "\n“Tom!”"],
+    [36, "war_of_the_worlds", "No one would have believed in the last years of the nineteenth"],
+    [174, "dorian_gray", "The studio was filled with the rich odour of roses"],
+    [421, "kidnapped", "I will begin the story of my adventures"],
+    [105, "a_persuasion", "Sir Walter Elliot, of Kellynch Hall"],
+    [345, "dracula", "_3 May. Bistritz._--Left Munich"]
+  ],
+  "test": [145, "middlemarch", "Who that cares much to know the history of man"],
+  "release_test": [2641, "room_with_view", "“The Signora had no business to do it,” said Miss Bartlett"]
+}

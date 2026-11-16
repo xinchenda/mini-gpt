@@ -1,0 +1,33 @@
+
+## She looked out of the window and
+
+base12
+模型 MiniGPT，tokenizer bpe，宽度 64，层数 2，参数量 236,288，上下文长度 64，训练步数 9600，词表 1024
+贪心     'She looked out of the window and' → '\nshelming and full of change, and the big boat, and the\nscape of the captain, and the bigger of the captain'
+温度 0.7  'She looked out of the window and' → '\ndown to the boats of the Winkies. So they were,\nsaying down and down the full of miles and waiting and windows of the\nn'
+data27_w128_l4_20k
+模型 MiniGPT，tokenizer bpe，宽度 128，层数 4，参数量 1,064,704，上下文长度 64，训练步数 20000，词表 1024
+贪心     'She looked out of the window and' → '\nsheltering, and the coachman was a little boy, and the boat was\nspoken.\n\n“If you’d have a bit of a cou'
+温度 0.7  'She looked out of the window and' → ' sleep,\nand he looked down upon the grass and wigwamped, and I didn’t see what\nwas the laird was about to keep the rain, and dri'
+
+## The old man opened the door and
+
+base12
+模型 MiniGPT，tokenizer bpe，宽度 64，层数 2，参数量 236,288，上下文长度 64，训练步数 9600，词表 1024
+贪心     'The old man opened the door and' → '\nshe was a little boy, and the bigger of the captain, and the\nscape of the captain, and the big boat, and the big'
+温度 0.7  'The old man opened the door and' → ' said, “for the boats of the Winkies,\nfrom the fire and the palporation, or even by the wallow,\nshe walked, and the stock'
+data27_w128_l4_20k
+模型 MiniGPT，tokenizer bpe，宽度 128，层数 4，参数量 1,064,704，上下文长度 64，训练步数 20000，词表 1024
+贪心     'The old man opened the door and' → ' looked at me.\n\n“If you’d be so, I’m a-going to be a bit of a corner, and I’m\nsaid I’m a-g'
+温度 0.7  'The old man opened the door and' → ' looked at me, and he took a hand upon\nwherever it was, I went to my breast, and then, and we stood on the\ndesperately.\n\n“How don'
+
+## I do not think that
+
+base12
+模型 MiniGPT，tokenizer bpe，宽度 64，层数 2，参数量 236,288，上下文长度 64，训练步数 9600，词表 1024
+贪心     'I do not think that' → ' you\ndoes, and I’m not believe you. I’m not believe you. I’m\nsure you, and you’ve been a very good-house, and you’'
+温度 0.7  'I do not think that' → ' you may have any\nplease. Now I have been a built, and you see.”\n\n“Yes, my mother I had a givening, and I do not be so\n'
+data27_w128_l4_20k
+模型 MiniGPT，tokenizer bpe，宽度 128，层数 4，参数量 1,064,704，上下文长度 64，训练步数 20000，词表 1024
+贪心     'I do not think that' → ' I am not\nsupposing to be in the world, and I am not afraid of it. I am not\nsure you, I am not afraid of yourself. I am not afra'
+温度 0.7  'I do not think that' → ' we shall be so\nmuch to be very like, and I shall have done you to give you my wrink, and\nyou’d be a serious boat, if you don’t'

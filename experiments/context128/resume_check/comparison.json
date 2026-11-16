@@ -1,0 +1,8 @@
+{
+  "max_parameter_abs_diff": 6.122514605522156e-05,
+  "threshold": 0.001,
+  "total_steps": 40,
+  "batch_size": 4,
+  "final_validation_loss_continuous": 6.062033,
+  "final_validation_loss_resumed": 6.062033
+}

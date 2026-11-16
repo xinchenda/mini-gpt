@@ -1,0 +1,21 @@
+{
+  "text": "data/gutenberg_v2/room_with_view_body.txt",
+  "sha256": "7421da8bd0e9429e4146273f2bd82f50d13526126c31dc20c45f682b47bbb900",
+  "windows": 1024,
+  "targets_per_window": 16,
+  "models": {
+    "context64": {
+      "weights": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+      "step": 20000,
+      "loss_context64": 3.194381595705636
+    },
+    "context128": {
+      "weights": "experiments/context128/best.safetensors",
+      "step": 19200,
+      "loss_context64": 3.209919817163609,
+      "loss_context128": 3.2182183909462765,
+      "loss_replaced_prefix": 3.2229388860287145,
+      "real_prefix_wins": 559
+    }
+  }
+}

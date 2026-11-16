@@ -1,0 +1,24 @@
+{
+  "text": "data/gutenberg_v2/room_with_view_body.txt",
+  "text_sha256": "7421da8bd0e9429e4146273f2bd82f50d13526126c31dc20c45f682b47bbb900",
+  "stride": 16,
+  "models": {
+    "context64": {
+      "weights": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+      "step": 20000,
+      "width": 128,
+      "layers": 4,
+      "loss_nat_per_token": 3.1890363499907552,
+      "continuation_ranking": {
+        "examples": 64,
+        "wins": 64,
+        "ties": 0,
+        "accuracy": 1.0,
+        "mean_nll_margin_per_token": 1.8647469244897366
+      }
+    }
+  },
+  "context": 64,
+  "tokens": 151934,
+  "scored_tokens": 151933
+}

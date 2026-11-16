@@ -1,0 +1,21 @@
+{
+  "text": "data/wind_in_willows_body.txt",
+  "sha256": "32be80053f26bbe47242bf7605f2c28758a0af219820ab1a098286d53e50a671",
+  "windows": 1024,
+  "targets_per_window": 16,
+  "models": {
+    "context64": {
+      "weights": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+      "step": 20000,
+      "loss_context64": 3.224452736787498
+    },
+    "context128": {
+      "weights": "experiments/context128/best.safetensors",
+      "step": 19200,
+      "loss_context64": 3.2351127461297438,
+      "loss_context128": 3.239012908306904,
+      "loss_replaced_prefix": 3.246001470834017,
+      "real_prefix_wins": 580
+    }
+  }
+}

@@ -1,0 +1,19 @@
+设备 Device(gpu, 0)，训练 token 5,994,158，验证 token 127,960
+训练文本 alice_body.txt + looking_glass_body.txt + oz_body.txt + secret_garden_body.txt + jungle_book_body.txt + treasure_island_body.txt + pride_prejudice_body.txt + frankenstein_body.txt + time_machine_body.txt + call_of_wild_body.txt + walden_body.txt + romeo_juliet_body.txt + tale_of_two_cities_body.txt + great_expectations_body.txt + david_copperfield_body.txt + wuthering_heights_body.txt + jane_eyre_body.txt + sense_sensibility_body.txt + emma_body.txt + moby_dick_body.txt + huckleberry_finn_body.txt + tom_sawyer_body.txt + war_of_the_worlds_body.txt + dorian_gray_body.txt + kidnapped_body.txt + a_persuasion_body.txt + dracula_body.txt，验证文本 wind_in_willows_body.txt
+数据清单 gutenberg_v2_27books，最终测试保留 middlemarch_body.txt
+验证集未知字符 0 个，字符类型 []
+模型宽度 32，层数 1，参数量 80,352
+学习率调度 cosine，最高 0.003，最低 0.0003，warmup 25
+梯度裁剪 0.5
+Tokenizer bpe，词表 1024，固定验证窗口 64 个
+输入 token 示例 ['A', 'lice', 'Ġwas', 'Ġbeg', 'in', 'ning', 'Ġto', 'Ġget', 'Ġvery', 'Ġt', 'ired', 'Ġof', 'Ġs', 'itt', 'ing', 'Ġby', 'Ġher', 'Ġs', 'ister', 'Ġon', 'Ġthe', 'Ċ', 'b', 'an', 'k', ',', 'Ġand', 'Ġof', 'Ġha', 'ving', 'Ġnothing', 'Ġto']
+目标 token 示例 ['lice', 'Ġwas', 'Ġbeg', 'in', 'ning', 'Ġto', 'Ġget', 'Ġvery', 'Ġt', 'ired', 'Ġof', 'Ġs', 'itt', 'ing', 'Ġby', 'Ġher', 'Ġs', 'ister', 'Ġon', 'Ġthe', 'Ċ', 'b', 'an', 'k', ',', 'Ġand', 'Ġof', 'Ġha', 'ving', 'Ġnothing', 'Ġto', 'Ġdo']
+已加载权重 experiments/context128/resume_check/checkpoint_step_20.safetensors
+已加载优化器状态 experiments/context128/resume_check/checkpoint_step_20.optimizer.safetensors
+第 20 步  验证 loss 6.152
+第 40 步  更新前训练批次 loss 5.992  更新后验证 loss 6.062  学习率 0.000330
+训练耗时 0.052 秒，383.1 步/秒，49,032 token/秒，峰值内存 14.3 MB
+梯度范数平均 0.533，最大 0.708，裁剪更新 14/20
+已保存权重 experiments/context128/resume_check/resumed.safetensors
+最佳验证 loss 6.062，出现在第 40 步
+已记录实验 experiments/context128/resume_check/training.csv

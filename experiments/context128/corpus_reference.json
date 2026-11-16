@@ -1,0 +1,269 @@
+{
+  "method": "整书与至少 40 词的完整段落，忽略大小写、标点与空白后精确匹配",
+  "books": [
+    {
+      "role": "train",
+      "file": "alice_body.txt",
+      "characters": 143981,
+      "sha256": "ee916c3a0ce79fc528621480fd5123f9b55258f0e5938a6be6a04a0defeac06d",
+      "ebook": 11,
+      "url": "https://www.gutenberg.org/cache/epub/11/pg11.txt",
+      "start_marker": "Alice was beginning to get very tired of sitting by her sister on the\n"
+    },
+    {
+      "role": "train",
+      "file": "looking_glass_body.txt",
+      "characters": 160951,
+      "sha256": "85981e8861bc5c1abb1ee32079f958552a2e3cc47057edda2bdb8150d3795a99",
+      "ebook": 12,
+      "url": "https://www.gutenberg.org/cache/epub/12/pg12.txt",
+      "start_marker": "One thing was certain, that the _white_ kitten had had nothing to do\nw"
+    },
+    {
+      "role": "train",
+      "file": "oz_body.txt",
+      "characters": 205466,
+      "sha256": "6e8fe2625949ae050cb8cd3104b0f4cb78c3622fefff1c0dde2ef51a9fb6b26f",
+      "ebook": 55,
+      "url": "https://www.gutenberg.org/cache/epub/55/pg55.txt",
+      "start_marker": "Dorothy lived in the midst of the great Kansas prairies, with Uncle\nHe"
+    },
+    {
+      "role": "train",
+      "file": "secret_garden_body.txt",
+      "characters": 430185,
+      "sha256": "e56be576cfbec6b3ec71a80d612383878ed58b16e0f4f5994f1b4f554ead0dc8",
+      "ebook": 17396,
+      "url": "https://www.gutenberg.org/cache/epub/17396/pg17396.txt",
+      "start_marker": "When Mary Lennox was sent to Misselthwaite Manor to live with her uncl"
+    },
+    {
+      "role": "train",
+      "file": "jungle_book_body.txt",
+      "characters": 272256,
+      "sha256": "56b83a7f79881d58b196c6c1f452b21f21622cbe24f51d21a341261663be2855",
+      "ebook": 236,
+      "url": "https://www.gutenberg.org/cache/epub/236/pg236.txt",
+      "start_marker": "It was seven o’clock of a very warm evening in the Seeonee hills when\n"
+    },
+    {
+      "role": "train",
+      "file": "treasure_island_body.txt",
+      "characters": 360785,
+      "sha256": "f19a21a5f9dd2b168f7267e1259e3d7768abe1d74ddfbd1bd87bc8603e451f8d",
+      "ebook": 120,
+      "url": "https://www.gutenberg.org/cache/epub/120/pg120.txt",
+      "start_marker": "Squire Trelawney, Dr. Livesey, and the rest of these gentlemen having\n"
+    },
+    {
+      "role": "train",
+      "file": "pride_prejudice_body.txt",
+      "characters": 694452,
+      "sha256": "fefa5417b035a9b98492776a297b58ff6335643dc9b2d6f3f14f3e6226c4fc0d",
+      "ebook": 1342,
+      "url": "https://www.gutenberg.org/cache/epub/1342/pg1342.txt",
+      "start_marker": "It is a truth universally acknowledged, that a single man in possessio"
+    },
+    {
+      "role": "train",
+      "file": "frankenstein_body.txt",
+      "characters": 418843,
+      "sha256": "4620714853ddf3028f20fb447ed91bbbeb6c6d51cbaea37e58d8097b0d60a6e5",
+      "ebook": 84,
+      "url": "https://www.gutenberg.org/cache/epub/84/pg84.txt",
+      "start_marker": "You will rejoice to hear that no disaster has accompanied the\ncommence"
+    },
+    {
+      "role": "train",
+      "file": "time_machine_body.txt",
+      "characters": 179233,
+      "sha256": "0b1fe15c6f387ad0241495559ad9e677114605b7f2cecfac98f3e6f9047d2f06",
+      "ebook": 35,
+      "url": "https://www.gutenberg.org/cache/epub/35/pg35.txt",
+      "start_marker": "The Time Traveller (for so it will be convenient to speak of him)\nwas "
+    },
+    {
+      "role": "train",
+      "file": "call_of_wild_body.txt",
+      "characters": 175114,
+      "sha256": "85abe68a99f77522afe6f0516be7d3f107c8e71bd610d43e662e6b63dc480516",
+      "ebook": 215,
+      "url": "https://www.gutenberg.org/cache/epub/215/pg215.txt",
+      "start_marker": "Buck did not read the newspapers, or he would have known that trouble\n"
+    },
+    {
+      "role": "train",
+      "file": "walden_body.txt",
+      "characters": 634181,
+      "sha256": "1a0ad1d2f60ba4e40165bc1769bd480761c773ad04b017835fb25b28fd43e09e",
+      "ebook": 205,
+      "url": "https://www.gutenberg.org/cache/epub/205/pg205.txt",
+      "start_marker": "When I wrote the following pages, or rather the bulk of them, I lived\n"
+    },
+    {
+      "role": "train",
+      "file": "romeo_juliet_body.txt",
+      "characters": 140436,
+      "sha256": "8e9a3f0c6348a6540f62cac5c3bee46df9a30ee2bdb4a7fae0ace14a156dce1e",
+      "ebook": 1513,
+      "url": "https://www.gutenberg.org/cache/epub/1513/pg1513.txt",
+      "start_marker": "Two households, both alike in dignity,\nIn fair Verona, where we lay ou"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/tale_of_two_cities_body.txt",
+      "characters": 755722,
+      "sha256": "d7243a10b3e9140cb21f9defeeab87406d21dfa73f849d01701ebbd1c638c242",
+      "ebook": 98,
+      "url": "https://www.gutenberg.org/cache/epub/98/pg98.txt",
+      "start_marker": "It was the best of times"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/great_expectations_body.txt",
+      "characters": 993638,
+      "sha256": "6d28a9e4b9abb2fbbc4ae3be4ab9677d03f59037a1ba3bc279b789d541519b61",
+      "ebook": 1400,
+      "url": "https://www.gutenberg.org/cache/epub/1400/pg1400.txt",
+      "start_marker": "My father’s family name being Pirrip"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/david_copperfield_body.txt",
+      "characters": 1928905,
+      "sha256": "974ea536905a54bcc1b0089984e34f51f6329f62030de479457beda2f09774e0",
+      "ebook": 766,
+      "url": "https://www.gutenberg.org/cache/epub/766/pg766.txt",
+      "start_marker": "Whether I shall turn out to be the hero of my own life"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/wuthering_heights_body.txt",
+      "characters": 645554,
+      "sha256": "82ceece173547d95ecc8e52994235f3f62ce6cc6f31c3f67223f53e9d5522b8d",
+      "ebook": 768,
+      "url": "https://www.gutenberg.org/cache/epub/768/pg768.txt",
+      "start_marker": "1801—I have just returned from a visit"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/jane_eyre_body.txt",
+      "characters": 1016924,
+      "sha256": "006783690bc043cb1a63a9b3f44ceea3d9c6356ae9266350776316f99e903b46",
+      "ebook": 1260,
+      "url": "https://www.gutenberg.org/cache/epub/1260/pg1260.txt",
+      "start_marker": "There was no possibility of taking a walk that day"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/sense_sensibility_body.txt",
+      "characters": 669897,
+      "sha256": "2d03a6a9bc378f5668b75734fa0ae2055b8dfd6a687881216329aae4c0f8539a",
+      "ebook": 161,
+      "url": "https://www.gutenberg.org/cache/epub/161/pg161.txt",
+      "start_marker": "The family of Dashwood had long been settled in Sussex"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/emma_body.txt",
+      "characters": 879575,
+      "sha256": "2f3d224e17f0a1d7c9720180fb9ca9cfcaf9fb4ea83b35e9a4fb52dd7fc008b7",
+      "ebook": 158,
+      "url": "https://www.gutenberg.org/cache/epub/158/pg158.txt",
+      "start_marker": "Emma Woodhouse, handsome, clever, and rich"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/moby_dick_body.txt",
+      "characters": 1191778,
+      "sha256": "8b98a5c650e0c8b1da0267bd5bb21a7e2af88b6a5fbd872e8fcf0c0e435e04c8",
+      "ebook": 2701,
+      "url": "https://www.gutenberg.org/cache/epub/2701/pg2701.txt",
+      "start_marker": "Call me Ishmael. Some years ago"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/huckleberry_finn_body.txt",
+      "characters": 562743,
+      "sha256": "8ae91c4c0872eb41cecd335f27b459e0703ae3eb33a119025ef8ba681ce637c6",
+      "ebook": 76,
+      "url": "https://www.gutenberg.org/cache/epub/76/pg76.txt",
+      "start_marker": "You don’t know about me without you have read a book"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/tom_sawyer_body.txt",
+      "characters": 386032,
+      "sha256": "59cc91ffe2833dec698dc5c0c383080c6fb0207ee3b7ce5ea11f8d79e5e480f7",
+      "ebook": 74,
+      "url": "https://www.gutenberg.org/cache/epub/74/pg74.txt",
+      "start_marker": "\n“Tom!”"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/war_of_the_worlds_body.txt",
+      "characters": 336262,
+      "sha256": "19970ae5c262623ea7e775caffeeb7b795d74ad6954d859c840a0df79bc958fe",
+      "ebook": 36,
+      "url": "https://www.gutenberg.org/cache/epub/36/pg36.txt",
+      "start_marker": "No one would have believed in the last years of the nineteenth"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/dorian_gray_body.txt",
+      "characters": 426869,
+      "sha256": "48c4a9d5476d0c9a87cee7757c43b1ee3f8688e9d2828d0801235e50e0218537",
+      "ebook": 174,
+      "url": "https://www.gutenberg.org/cache/epub/174/pg174.txt",
+      "start_marker": "The studio was filled with the rich odour of roses"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/kidnapped_body.txt",
+      "characters": 411848,
+      "sha256": "e3c4e961b7e1fdb2ca74367587567f5b9f4a232b7c3ce9dfb7283da73c3d91d8",
+      "ebook": 421,
+      "url": "https://www.gutenberg.org/cache/epub/421/pg421.txt",
+      "start_marker": "I will begin the story of my adventures"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/a_persuasion_body.txt",
+      "characters": 464427,
+      "sha256": "d44b9c0e2bad0b396da0e3a509d0b58545cd8572af03836e58990226a1fb7871",
+      "ebook": 105,
+      "url": "https://www.gutenberg.org/cache/epub/105/pg105.txt",
+      "start_marker": "Sir Walter Elliot, of Kellynch Hall"
+    },
+    {
+      "role": "train",
+      "file": "gutenberg_v2/dracula_body.txt",
+      "characters": 843624,
+      "sha256": "03d1f0a4a6f34c7a161a1a50dbeaf43e0258a7eb0bc0884df1a85b2960a44308",
+      "ebook": 345,
+      "url": "https://www.gutenberg.org/cache/epub/345/pg345.txt",
+      "start_marker": "_3 May. Bistritz._--Left Munich"
+    },
+    {
+      "role": "validation",
+      "file": "wind_in_willows_body.txt",
+      "characters": 324257,
+      "sha256": "b68832682a6adcb28b4abd132745a49552b986552987e48318b8747eecd6dde3",
+      "ebook": 289,
+      "url": "https://www.gutenberg.org/cache/epub/289/pg289.txt",
+      "start_marker": "The Mole had been working very hard all the morning, spring-cleaning\nh"
+    },
+    {
+      "role": "test",
+      "file": "gutenberg_v2/room_with_view_body.txt",
+      "characters": 374026,
+      "sha256": "86eb1c67e472e368901c30b87a5d328035679496aad140f58ca4127621929285",
+      "ebook": 2641,
+      "url": "https://www.gutenberg.org/cache/epub/2641/pg2641.txt",
+      "start_marker": "“The Signora had no business to do it,” said Miss Bartlett"
+    }
+  ],
+  "duplicate_books": [],
+  "repeated_paragraphs_across_books": [],
+  "train_eval_overlap": []
+}

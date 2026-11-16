@@ -1,0 +1,9 @@
+.venv/
+__pycache__/
+.DS_Store
+*.pyc
+exports/
+
+data/**/*.txt
+data/gutenberg_v2/audit.json
+data/gutenberg_v2/release_audit.json
