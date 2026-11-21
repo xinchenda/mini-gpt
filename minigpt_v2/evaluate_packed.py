@@ -42,6 +42,8 @@ def main():
     parser.add_argument('--device',default='cpu')
     parser.add_argument('--stride',type=int,default=256)
     parser.add_argument('--batch-size',type=int,default=8)
+    parser.add_argument('--roles',nargs='+',choices=('validation','test'),
+                        default=('validation','test'))
     parser.add_argument('--output',type=Path,required=True)
     args=parser.parse_args()
     if args.batch_size<1:parser.error('batch-size must be positive')
@@ -49,7 +51,7 @@ def main():
     if digest(args.data/'tokenizer.json')!=digest(Path(args.artifact)/'tokenizer.json'):
         raise ValueError('Data tokenizer differs from model tokenizer')
     report=dict(device=args.device,documents={})
-    for role in ('validation','test'):
+    for role in args.roles:
         path=args.data/f'{role}.bin'
         ids=np.memmap(path,dtype='<u2',mode='r')
         result=score_batched(model,ids,args.batch_size,args.stride)

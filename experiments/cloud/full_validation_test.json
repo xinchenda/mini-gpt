@@ -1,0 +1,25 @@
+{
+  "device": "mps",
+  "documents": {
+    "validation": {
+      "targets": 1467199,
+      "loss": 3.038042327106305,
+      "perplexity": 20.864357640443288,
+      "stride": 256,
+      "context": 512,
+      "precision": "fp32",
+      "protocol": "strided_all_targets_once",
+      "sha256": "c5323db0bd9793aef07178588910cd839cabc538c4c869ed3a2ce9a9771f8c77"
+    },
+    "test": {
+      "targets": 1499973,
+      "loss": 3.0321270555717494,
+      "perplexity": 20.741303607424676,
+      "stride": 256,
+      "context": 512,
+      "precision": "fp32",
+      "protocol": "strided_all_targets_once",
+      "sha256": "41a217d8475609c84c25517e40de0a4bab535d74717f60d2e1beba88f43d736e"
+    }
+  }
+}

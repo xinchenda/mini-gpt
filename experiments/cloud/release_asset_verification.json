@@ -1,0 +1,11 @@
+{
+  "repository": "xinchenda/mini-gpt",
+  "tag": "v2.0.0",
+  "asset": "minigpt-cloud98m.zip",
+  "bytes": 365327134,
+  "local_sha256": "eefca7dbcab57eb5605ddfa3ef398001581fdf32790ff2bfc868961cbd7b837d",
+  "github_digest": "sha256:eefca7dbcab57eb5605ddfa3ef398001581fdf32790ff2bfc868961cbd7b837d",
+  "state": "uploaded",
+  "hash_match": true,
+  "date": "2026-11-21"
+}
