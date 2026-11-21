@@ -27,6 +27,7 @@
 | [文件索引](docs/FILE_INDEX.md) | 发布内容、训练状态与历史文件的位置 |
 | [本机 v2 结果](docs/results.md) | 约 507 万参数的前序模型及对照 |
 | [MLX v1](docs/v1-release.md) | 最初 27 本书训练记录 |
+| [第三方声明](THIRD_PARTY_NOTICES.md) | 训练数据、依赖和参考项目归属 |
 
 ## 运行环境与验证
 
@@ -69,3 +70,7 @@ python -m minigpt_v2.train \
 测试覆盖因果性、KV-cache、目标评分覆盖、训练恢复、数据分离、模型包完整性、HTTP 边界与预算/关机处理。CPU 的连续与中断恢复通过逐参数一致性测试，未声称 GPU 位级一致性。HTTP 默认仅监听本机，不提供生产 SLA。
 
 项目使用 Codex 辅助实现与验证。开源资料的对照、未采用的设计和真实故障均保留记录；未将成熟设计或一次实验包装为原创算法。数据正文按官方来源配方重建，不提交原始网页或书籍正文。
+
+## 许可证
+
+本项目的原创源代码和训练产出的模型文件采用 [MIT License](LICENSE)。第三方软件、数据集和训练文本继续适用各自许可证与署名要求，详见 [Third-Party Notices](THIRD_PARTY_NOTICES.md)。仓库不分发 FineWeb-Edu、Project Gutenberg 或 WikiText-2 的原始正文。

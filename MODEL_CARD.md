@@ -35,4 +35,4 @@
 
 ## 开发与许可
 
-项目使用 Codex 辅助开发与验证，成熟设计对照见 [开源审查](docs/OPEN_SOURCE_REVIEW.md)。FineWeb-Edu 来源许可为 ODC-BY 1.0，数据正文不随仓库分发。前序本机模型卡保留于 [本机 v2 模型卡](docs/local-v2-model-card.md)。完整预算、故障与结项证据见 [结项记录](docs/CLOSEOUT.md)。
+项目使用 Codex 辅助开发与验证，成熟设计对照见 [开源审查](docs/OPEN_SOURCE_REVIEW.md)。原创源代码和本项目训练产出的模型文件采用 [MIT License](LICENSE)；第三方依赖、数据和参考材料保留各自权利，详见 [Third-Party Notices](THIRD_PARTY_NOTICES.md)。FineWeb-Edu 来源许可为 ODC-BY 1.0，数据正文不随仓库分发。前序本机模型卡保留于 [本机 v2 模型卡](docs/local-v2-model-card.md)。完整预算、故障与结项证据见 [结项记录](docs/CLOSEOUT.md)。
