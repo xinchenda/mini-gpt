@@ -1,0 +1,12 @@
+{
+  "source": "https://mirror.csclub.uwaterloo.ca/gutenberg/4/43/43-0.txt",
+  "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+  "gutenberg_id": 43,
+  "normalized": true,
+  "raw_sha256": "34b5f8b36387fe472ce79b8cdab75d4b97783265a7f71e5729dc5b9a3dc14818",
+  "body_sha256": "c6d6d652c14836cdc58af69ac008bd95bb7ae51be936336a5ed09200641a7701",
+  "start_marker": "Mr. Utterson the lawyer",
+  "characters": 138427,
+  "overlap_40_word_windows": {},
+  "caveat": "Exact normalized 40-word check; no semantic or shorter overlap detection"
+}

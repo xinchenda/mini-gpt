@@ -1,0 +1,70 @@
+{
+  "selected": "experiments/v2/mixed_corpus",
+  "best_step": 4800,
+  "best_validation_loss": 2.61156764626503,
+  "reference": {
+    "initial_context256_mixed_validation_loss": 4.549931585788727,
+    "protocol": "same mixed validation documents, fixed seed/windows and suffix targets"
+  },
+  "protocol": "mixed validation, fixed 256-token windows, score common suffix targets",
+  "candidate": {
+    "run": "experiments/v2/mixed_corpus",
+    "config": {
+      "vocab_size": 1024,
+      "context": 256,
+      "width": 256,
+      "layers": 6,
+      "heads": 8
+    },
+    "seed": 42,
+    "trained_steps": 5000,
+    "best_step": 4800,
+    "best_validation_loss": 2.61156764626503,
+    "tokens_per_second": 11982.865701520846,
+    "training_target_tokens": 5120000,
+    "data_signature": {
+      "documents": {
+        "train": [
+          "2d28401bb968f06ec83205ecdd2942761e1864ce7dc1cfd1aa70a5f0d3cf6d6f",
+          "c3e68e172283e00aa0df73f5bc1309ba6f3c4d9f59cefa65d1bf92dc6a14bdb5",
+          "9938c6c2ebd7f33b36cc29e105a312591c917afc438d12805df4ba088e9e68c6",
+          "26d161246d771ba34f3f48084ef5ba24e911309f410087c4af7bf9747ea9e176",
+          "076c5d1cc3ee3ea8fdca1d4d1c5afaf1e4d0df604413a92c39354419ea2b213a",
+          "978fbf2185fb5a9492954a754a92ed0d41e2b94dbf2d5c31bb8912fa85bb71ee",
+          "5a166bb9d594bd5408d440a4fde0416616ef0ff04d1c920f403af74c7d640934",
+          "65f55051c30e2f977ad88de4f9b130e847c41574918defa11deb713efe5613b6",
+          "beb73d34887aca2b319dc10e4e8eeb8b3265824dc25c3ac2ce9cae9ae91c68c7",
+          "2a456fe5789f58839ec8f4d18865c974d4287de7650a056515522327ae74c3ca",
+          "b6493100cebba5562bd19b87cae51c4e2e5b74af3e943b1ab1becb4f7e658a49",
+          "45196b641b00ea9db7225adfde299e9de8667bf7a6a551f30dfe02aab5a339ff",
+          "8b18c1b610ec864a07d553ae46693aed669901a85b0117186e3dadd5245c670f",
+          "54c549dbb38dd2a62f5de94f3481530d3bebe98d1b7dcc48ea1f2c31d0575762",
+          "bcb72c60401097be073ca8dd23d84db634f0f9c985b7af26b1480cc115df8e36",
+          "c389d674e61c29205cd198b2bd18ca3f0e31bafd0af0721b88edc47ac83eb7ec",
+          "cf6c2c9850af261e791bba60f7a688861e8ec0b1acf2927dc6d347d30c76806c",
+          "93e94f4d169f741350398da496b92d1b5adc9e458bb88a8b93b78ae338af3c46",
+          "9f7175c061855cb36ebcfd744dc330be5a72eb43e5985d9e45d376f44e780fb9",
+          "c562e0d3b28c6c6fd4f1e62123b3ff60c5e983736c3fe28ce46fad9b948313d4",
+          "ef76d6d91717ae00c396a9e2862ca4a786e8a96a2a48d0e2a885a7ee5ef5924d",
+          "7d58f159d5a840ee624790e8ddf6c254cae5d1d27c7358c968760da5f5bb27ba",
+          "b9270b0cbd7e36bc6818b2ed2423598a2f14cd065188cde664318c2d95cd0cfe",
+          "b4e99d09acee5977a378650d3f4d0dfdc950a085c0ad80689b7c66a4d8cf89a3",
+          "bb0be3195693ecee0787370a40097aa2820c494890651b91090b95e45d66c004",
+          "bc4965ef415a95b810736a80313c37021c00041302a642a882f7b40c254c216e",
+          "05ae6faf5d1fbbf7048d2408c51b735b942946d35753ed5a61cadc84f8f47da4",
+          "9e9fa1ad55b1c2c95b08e37dd8e653f638fac2c6de904b79e813611eefbc985f"
+        ],
+        "validation": [
+          "207953fe0941bf515e578842c99f90d2f91556e9fcf2965407196bebe7e621c5",
+          "f0737ed31fc1329026e95cb8b98e19c2a182c39c240ab909dc31abf2f8af58e8"
+        ],
+        "test": [
+          "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0"
+        ]
+      },
+      "tokenizer": "fd5d5506481f47afb45ae5679a963d000139c5e0b70846e3adc85bca27773cac"
+    }
+  },
+  "final_book": "The Lost World, Gutenberg #139; score after this selection",
+  "disclosure": "LAMBADA/WikiText benchmark failures informed data-format and domain-expansion experiments."
+}

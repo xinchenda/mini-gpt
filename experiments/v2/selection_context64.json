@@ -1,0 +1,9 @@
+{
+  "selected": "experiments/v2/large_normalized",
+  "best_step": 4800,
+  "best_validation_loss": 3.1124800741672516,
+  "validation_format": "paragraph normalized",
+  "prior_capacity_selection": "capacity_comparison.json",
+  "format_ablation": "format_ablation.json",
+  "test_disclosure": "Earlier LAMBADA revealed formatting bias; new final book #77 reserved after diagnosis."
+}

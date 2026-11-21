@@ -1,0 +1,30 @@
+{
+  "source": "https://huggingface.co/datasets/HuggingFaceFW/fineweb-edu/resolve/651a648da38bf545cc5487530dbf59d8168c8de3/sample/10BT/000_00000.parquet",
+  "revision": "651a648da38bf545cc5487530dbf59d8168c8de3",
+  "license": "ODC-BY 1.0",
+  "source_sha256": "b1ba7b2ce4cb5ea6ef42dca40263eabb85f37700d01693a68e9b30a31d78e871",
+  "token_counts": {
+    "train": 300001097,
+    "validation": 1467200,
+    "test": 1499974
+  },
+  "document_counts": {
+    "train": 270869,
+    "validation": 1414,
+    "test": 1439
+  },
+  "exact_duplicates_removed": 102,
+  "split": "SHA256(SHA256(text).hexdigest()) modulo 1000: test 0..4, validation 5..9",
+  "packing": "EOS between documents; windows may cross EOS",
+  "tokenizer_training_documents": 20000,
+  "limitations": [
+    "No approximate deduplication",
+    "No public benchmark contamination audit yet"
+  ],
+  "sha256": {
+    "train.bin": "b3111a07960b062cfa2bc8d5791b0f48e171bd15acfd6cfb905cc5a3d201e6ed",
+    "validation.bin": "c5323db0bd9793aef07178588910cd839cabc538c4c869ed3a2ce9a9771f8c77",
+    "test.bin": "41a217d8475609c84c25517e40de0a4bab535d74717f60d2e1beba88f43d736e",
+    "tokenizer.json": "39d717db45e1d768470387e1180c9e10eafa7771c2071d6b6eca47b6ba30aaa9"
+  }
+}

@@ -1,0 +1,20 @@
+test_name,checkpoint,test_text,test_chars,unknown_char_count,unknown_char_types,tokenizer,vocab_size,chars_per_token,raw_loss,loss_unit,bits_per_char
+char_final_peter_pan,experiments/checkpoints/multibook/alice_plus_looking_glass_to_oz_10000_best.safetensors,data/peter_pan_body.txt,254587,16,"['0', '2', '7', 'é']",character,79,1.000000,1.883,nat/char,2.716595
+bpe_final_peter_pan,experiments/checkpoints/bpe/bpe_alice_plus_looking_glass_to_oz_10000_best.safetensors,data/peter_pan_body.txt,254587,0,[],bpe,512,2.040778,3.813,nat/token,2.695539
+char_5books_peter_pan,experiments/checkpoints/corpus5/char_5books_to_wind_10000_best.safetensors,data/peter_pan_body.txt,254587,2,"['é']",character,91,1.000000,1.761,nat/char,2.540586
+bpe_5books_peter_pan,experiments/checkpoints/corpus5/bpe_5books_to_wind_10000_best.safetensors,data/peter_pan_body.txt,254587,0,[],bpe,1024,2.549031,4.013,nat/token,2.271269
+bpe_5books_width128_peter_pan,experiments/checkpoints/corpus5/bpe_5books_width128_to_wind_10000_best.safetensors,data/peter_pan_body.txt,254587,0,[],bpe,1024,2.549031,4.011,nat/token,2.270137
+bpe_5books_width128_anne,experiments/checkpoints/corpus5/bpe_5books_width128_to_wind_10000_best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.485104,4.022,nat/token,2.334920
+bpe_5books_width128_cosine_anne,experiments/checkpoints/corpus5/bpe_5books_width128_cosine_to_wind_10000_best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.485104,3.974,nat/token,2.307055
+bpe_5books_width128_cosine_context64_anne,experiments/checkpoints/corpus5/bpe_5books_width128_cosine_context64_to_wind_10000_best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.485104,4.031,nat/token,2.340145
+bpe_8books_width128_cosine_anne,experiments/checkpoints/corpus8/bpe_8books_width128_cosine_to_wind_10000_best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.501461,3.960,nat/token,2.283894
+bpe_12books_width128_cosine_anne,experiments/checkpoints/corpus12/bpe_12books_width128_cosine_to_wind_10000_best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.509850,3.785,nat/token,2.175668
+bpe_12books_width64_seed42_anne,experiments/checkpoints/seeds_width64/seed42/best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.509850,3.662,nat/token,2.104966
+bpe_12books_width64_seed43_anne,experiments/checkpoints/seeds_width64/seed43/best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.509850,3.684,nat/token,2.117612
+bpe_12books_width64_seed44_anne,experiments/checkpoints/seeds_width64/seed44/best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.509850,3.694,nat/token,2.123360
+bpe_12books_width64_context64_seed42_anne,experiments/checkpoints/seeds_width64_context64/seed42/best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.509850,3.647,nat/token,2.096344
+bpe_12books_width64_context64_seed43_anne,experiments/checkpoints/seeds_width64_context64/seed43/best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.509850,3.647,nat/token,2.096344
+bpe_12books_width64_context64_seed44_anne,experiments/checkpoints/seeds_width64_context64/seed44/best.safetensors,data/anne_green_gables_body.txt,559039,0,[],bpe,1024,2.509850,3.655,nat/token,2.100942
+bpe_12books_width64_context64_seed42_sherlock,experiments/checkpoints/seeds_width64_context64/seed42/best.safetensors,data/sherlock_holmes_body.txt,561622,0,[],bpe,1024,2.558130,3.579,nat/token,2.018430
+bpe_12books_width64_context64_seed43_sherlock,experiments/checkpoints/seeds_width64_context64/seed43/best.safetensors,data/sherlock_holmes_body.txt,561622,0,[],bpe,1024,2.558130,3.598,nat/token,2.029145
+bpe_12books_width64_context64_seed44_sherlock,experiments/checkpoints/seeds_width64_context64/seed44/best.safetensors,data/sherlock_holmes_body.txt,561622,0,[],bpe,1024,2.558130,3.578,nat/token,2.017866

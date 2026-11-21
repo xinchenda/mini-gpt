@@ -1,0 +1,66 @@
+[
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.24590163934426235,
+    "text": "The old man opened the door and looked at him.\n\n“I am sure I cannot bear to see you. I am sure I cannot bear to\nsay, but I am not aware of it. I am sure I am not aware of it. I am\nsure I have no dou"
+  },
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "The old man opened the door and shook his eyes, and\nheld it off on the back of the house and lift his arms up in a block\nof a bad pit.\n\n“I have no chance of paintings of my darling,” he said, “but"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.21311475409836067,
+    "text": "Alice looked at the boys, and she\nsaid, “I’ll be glad to see you.”\n\n“Well, I’ll tell you, I’ll tell you, and I’ll tell you what I’m\ngoing.”\n\n“Well, I’ll"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "Alice looked at the little picture, and\ntook it on the raft, and she stood looking at the black body on the\nhighway pit\nwhen she looked back, and shook her head.\n\n“Shall I go?” she asked.\n"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.06557377049180324,
+    "text": "In the middle of the night, I was in the\nsame place, and I was in the case, and I was in the morning. I was\nsure I had been in the morning, and I had a sort of pain. I had been\nsomewhere to my duty, and I"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "In the middle of the night, I walked back to the\nlights of the ladies and lay the lightning of the fire, and I felt it\nbetween the tiny bank of the cave.\n\nBy the window in the moon rose"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.16393442622950816,
+    "text": "She could not understand why she had been\nsupposed to believe that she had been in the same place, and she had\nbeen aware of her. She had been in the morning, and had been\nsupposed to bear her. She had been very much interest"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "She could not understand why she had\nsaid her dress. She could not have lost her own; but she was so\ndifferent to her, that she could only receive the hours with her\nhand, and she saw her face on her taking her arms and c"
+  }
+]

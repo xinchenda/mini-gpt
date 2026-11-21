@@ -1,0 +1,29 @@
+{
+  "device": "mps",
+  "samples": [
+    {
+      "prompt": "The old man opened the door and",
+      "text": "The old man opened the door and opened the door to a small room. Then the boy opened the door to the house. The old man opened the door and opened the door. The old man opened the door and opened the door. The old man opened the door and opened the door. The old man opened the door and opened the door, opened the",
+      "seed": 42,
+      "temperature": 0.7,
+      "top_k": 20,
+      "new_tokens": 64
+    },
+    {
+      "prompt": "The purpose of scientific research is",
+      "text": "The purpose of scientific research is to improve the quality of the life-giving medicines used to treat the common cold, such as aspirin and ibuprofen. In addition, a study done by C. Kahneman of the University of Michigan, University of Toronto, and colleagues concluded that these medicines could be effective against the common cold.",
+      "seed": 42,
+      "temperature": 0.7,
+      "top_k": 20,
+      "new_tokens": 64
+    },
+    {
+      "prompt": "Alice was beginning to get very tired",
+      "text": "Alice was beginning to get very tired, and she was getting very sleepy. She was very tired, and she had no idea that she had to go to school. She had a headache, and she could not go to school. She had a very bad headache, and she had trouble thinking about doing school. She was very tired. She had trouble",
+      "seed": 42,
+      "temperature": 0.7,
+      "top_k": 20,
+      "new_tokens": 64
+    }
+  ]
+}

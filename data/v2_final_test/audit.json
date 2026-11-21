@@ -1,0 +1,12 @@
+{
+  "source": "https://mirror.csclub.uwaterloo.ca/gutenberg/1/3/139/139-0.txt",
+  "title": "The Lost World",
+  "gutenberg_id": 139,
+  "normalized": true,
+  "raw_sha256": "81e4af1169b86dc18fccf2da882d28041692243360ebae929252cd4945a04344",
+  "body_sha256": "c94e10ba01d8bd6d5c3df200cfcc7105a29c4af007c11c5b0892a7a465306b37",
+  "start_marker": "Mr. Hungerton",
+  "characters": 421367,
+  "overlap_40_word_windows": {},
+  "caveat": "Exact normalized 40-word check; no semantic or shorter overlap detection"
+}

@@ -1,0 +1,174 @@
+{
+  "selection_metric": "fixed Wind validation-window cross-entropy",
+  "selected": "experiments/v2/large_seed42",
+  "runs": [
+    {
+      "run": "experiments/v2/small_seed42",
+      "config": {
+        "vocab_size": 1024,
+        "context": 64,
+        "width": 128,
+        "layers": 4,
+        "heads": 4
+      },
+      "seed": 42,
+      "trained_steps": 20000,
+      "best_step": 19400,
+      "best_validation_loss": 3.3488699793815613,
+      "tokens_per_second": 41558.41739753057,
+      "training_target_tokens": 20480000,
+      "data_signature": {
+        "documents": {
+          "train": [
+            "ee916c3a0ce79fc528621480fd5123f9b55258f0e5938a6be6a04a0defeac06d",
+            "85981e8861bc5c1abb1ee32079f958552a2e3cc47057edda2bdb8150d3795a99",
+            "6e8fe2625949ae050cb8cd3104b0f4cb78c3622fefff1c0dde2ef51a9fb6b26f",
+            "e56be576cfbec6b3ec71a80d612383878ed58b16e0f4f5994f1b4f554ead0dc8",
+            "56b83a7f79881d58b196c6c1f452b21f21622cbe24f51d21a341261663be2855",
+            "f19a21a5f9dd2b168f7267e1259e3d7768abe1d74ddfbd1bd87bc8603e451f8d",
+            "fefa5417b035a9b98492776a297b58ff6335643dc9b2d6f3f14f3e6226c4fc0d",
+            "4620714853ddf3028f20fb447ed91bbbeb6c6d51cbaea37e58d8097b0d60a6e5",
+            "0b1fe15c6f387ad0241495559ad9e677114605b7f2cecfac98f3e6f9047d2f06",
+            "85abe68a99f77522afe6f0516be7d3f107c8e71bd610d43e662e6b63dc480516",
+            "1a0ad1d2f60ba4e40165bc1769bd480761c773ad04b017835fb25b28fd43e09e",
+            "8e9a3f0c6348a6540f62cac5c3bee46df9a30ee2bdb4a7fae0ace14a156dce1e",
+            "d7243a10b3e9140cb21f9defeeab87406d21dfa73f849d01701ebbd1c638c242",
+            "6d28a9e4b9abb2fbbc4ae3be4ab9677d03f59037a1ba3bc279b789d541519b61",
+            "974ea536905a54bcc1b0089984e34f51f6329f62030de479457beda2f09774e0",
+            "82ceece173547d95ecc8e52994235f3f62ce6cc6f31c3f67223f53e9d5522b8d",
+            "006783690bc043cb1a63a9b3f44ceea3d9c6356ae9266350776316f99e903b46",
+            "2d03a6a9bc378f5668b75734fa0ae2055b8dfd6a687881216329aae4c0f8539a",
+            "2f3d224e17f0a1d7c9720180fb9ca9cfcaf9fb4ea83b35e9a4fb52dd7fc008b7",
+            "8b98a5c650e0c8b1da0267bd5bb21a7e2af88b6a5fbd872e8fcf0c0e435e04c8",
+            "8ae91c4c0872eb41cecd335f27b459e0703ae3eb33a119025ef8ba681ce637c6",
+            "59cc91ffe2833dec698dc5c0c383080c6fb0207ee3b7ce5ea11f8d79e5e480f7",
+            "19970ae5c262623ea7e775caffeeb7b795d74ad6954d859c840a0df79bc958fe",
+            "48c4a9d5476d0c9a87cee7757c43b1ee3f8688e9d2828d0801235e50e0218537",
+            "e3c4e961b7e1fdb2ca74367587567f5b9f4a232b7c3ce9dfb7283da73c3d91d8",
+            "d44b9c0e2bad0b396da0e3a509d0b58545cd8572af03836e58990226a1fb7871",
+            "03d1f0a4a6f34c7a161a1a50dbeaf43e0258a7eb0bc0884df1a85b2960a44308"
+          ],
+          "validation": [
+            "b68832682a6adcb28b4abd132745a49552b986552987e48318b8747eecd6dde3"
+          ],
+          "test": [
+            "565310b6da8908929e25770cabf255afe3001fee5b675937643feea9c5bf27c1"
+          ]
+        },
+        "tokenizer": "fd5d5506481f47afb45ae5679a963d000139c5e0b70846e3adc85bca27773cac"
+      }
+    },
+    {
+      "run": "experiments/v2/medium_seed42",
+      "config": {
+        "vocab_size": 1024,
+        "context": 64,
+        "width": 192,
+        "layers": 6,
+        "heads": 6
+      },
+      "seed": 42,
+      "trained_steps": 20000,
+      "best_step": 20000,
+      "best_validation_loss": 3.20182928442955,
+      "tokens_per_second": 20187.621389930046,
+      "training_target_tokens": 20480000,
+      "data_signature": {
+        "documents": {
+          "train": [
+            "ee916c3a0ce79fc528621480fd5123f9b55258f0e5938a6be6a04a0defeac06d",
+            "85981e8861bc5c1abb1ee32079f958552a2e3cc47057edda2bdb8150d3795a99",
+            "6e8fe2625949ae050cb8cd3104b0f4cb78c3622fefff1c0dde2ef51a9fb6b26f",
+            "e56be576cfbec6b3ec71a80d612383878ed58b16e0f4f5994f1b4f554ead0dc8",
+            "56b83a7f79881d58b196c6c1f452b21f21622cbe24f51d21a341261663be2855",
+            "f19a21a5f9dd2b168f7267e1259e3d7768abe1d74ddfbd1bd87bc8603e451f8d",
+            "fefa5417b035a9b98492776a297b58ff6335643dc9b2d6f3f14f3e6226c4fc0d",
+            "4620714853ddf3028f20fb447ed91bbbeb6c6d51cbaea37e58d8097b0d60a6e5",
+            "0b1fe15c6f387ad0241495559ad9e677114605b7f2cecfac98f3e6f9047d2f06",
+            "85abe68a99f77522afe6f0516be7d3f107c8e71bd610d43e662e6b63dc480516",
+            "1a0ad1d2f60ba4e40165bc1769bd480761c773ad04b017835fb25b28fd43e09e",
+            "8e9a3f0c6348a6540f62cac5c3bee46df9a30ee2bdb4a7fae0ace14a156dce1e",
+            "d7243a10b3e9140cb21f9defeeab87406d21dfa73f849d01701ebbd1c638c242",
+            "6d28a9e4b9abb2fbbc4ae3be4ab9677d03f59037a1ba3bc279b789d541519b61",
+            "974ea536905a54bcc1b0089984e34f51f6329f62030de479457beda2f09774e0",
+            "82ceece173547d95ecc8e52994235f3f62ce6cc6f31c3f67223f53e9d5522b8d",
+            "006783690bc043cb1a63a9b3f44ceea3d9c6356ae9266350776316f99e903b46",
+            "2d03a6a9bc378f5668b75734fa0ae2055b8dfd6a687881216329aae4c0f8539a",
+            "2f3d224e17f0a1d7c9720180fb9ca9cfcaf9fb4ea83b35e9a4fb52dd7fc008b7",
+            "8b98a5c650e0c8b1da0267bd5bb21a7e2af88b6a5fbd872e8fcf0c0e435e04c8",
+            "8ae91c4c0872eb41cecd335f27b459e0703ae3eb33a119025ef8ba681ce637c6",
+            "59cc91ffe2833dec698dc5c0c383080c6fb0207ee3b7ce5ea11f8d79e5e480f7",
+            "19970ae5c262623ea7e775caffeeb7b795d74ad6954d859c840a0df79bc958fe",
+            "48c4a9d5476d0c9a87cee7757c43b1ee3f8688e9d2828d0801235e50e0218537",
+            "e3c4e961b7e1fdb2ca74367587567f5b9f4a232b7c3ce9dfb7283da73c3d91d8",
+            "d44b9c0e2bad0b396da0e3a509d0b58545cd8572af03836e58990226a1fb7871",
+            "03d1f0a4a6f34c7a161a1a50dbeaf43e0258a7eb0bc0884df1a85b2960a44308"
+          ],
+          "validation": [
+            "b68832682a6adcb28b4abd132745a49552b986552987e48318b8747eecd6dde3"
+          ],
+          "test": [
+            "565310b6da8908929e25770cabf255afe3001fee5b675937643feea9c5bf27c1"
+          ]
+        },
+        "tokenizer": "fd5d5506481f47afb45ae5679a963d000139c5e0b70846e3adc85bca27773cac"
+      }
+    },
+    {
+      "run": "experiments/v2/large_seed42",
+      "config": {
+        "vocab_size": 1024,
+        "context": 64,
+        "width": 256,
+        "layers": 6,
+        "heads": 8
+      },
+      "seed": 42,
+      "trained_steps": 20000,
+      "best_step": 20000,
+      "best_validation_loss": 3.1239828765392303,
+      "tokens_per_second": 17120.340451027245,
+      "training_target_tokens": 20480000,
+      "data_signature": {
+        "documents": {
+          "train": [
+            "ee916c3a0ce79fc528621480fd5123f9b55258f0e5938a6be6a04a0defeac06d",
+            "85981e8861bc5c1abb1ee32079f958552a2e3cc47057edda2bdb8150d3795a99",
+            "6e8fe2625949ae050cb8cd3104b0f4cb78c3622fefff1c0dde2ef51a9fb6b26f",
+            "e56be576cfbec6b3ec71a80d612383878ed58b16e0f4f5994f1b4f554ead0dc8",
+            "56b83a7f79881d58b196c6c1f452b21f21622cbe24f51d21a341261663be2855",
+            "f19a21a5f9dd2b168f7267e1259e3d7768abe1d74ddfbd1bd87bc8603e451f8d",
+            "fefa5417b035a9b98492776a297b58ff6335643dc9b2d6f3f14f3e6226c4fc0d",
+            "4620714853ddf3028f20fb447ed91bbbeb6c6d51cbaea37e58d8097b0d60a6e5",
+            "0b1fe15c6f387ad0241495559ad9e677114605b7f2cecfac98f3e6f9047d2f06",
+            "85abe68a99f77522afe6f0516be7d3f107c8e71bd610d43e662e6b63dc480516",
+            "1a0ad1d2f60ba4e40165bc1769bd480761c773ad04b017835fb25b28fd43e09e",
+            "8e9a3f0c6348a6540f62cac5c3bee46df9a30ee2bdb4a7fae0ace14a156dce1e",
+            "d7243a10b3e9140cb21f9defeeab87406d21dfa73f849d01701ebbd1c638c242",
+            "6d28a9e4b9abb2fbbc4ae3be4ab9677d03f59037a1ba3bc279b789d541519b61",
+            "974ea536905a54bcc1b0089984e34f51f6329f62030de479457beda2f09774e0",
+            "82ceece173547d95ecc8e52994235f3f62ce6cc6f31c3f67223f53e9d5522b8d",
+            "006783690bc043cb1a63a9b3f44ceea3d9c6356ae9266350776316f99e903b46",
+            "2d03a6a9bc378f5668b75734fa0ae2055b8dfd6a687881216329aae4c0f8539a",
+            "2f3d224e17f0a1d7c9720180fb9ca9cfcaf9fb4ea83b35e9a4fb52dd7fc008b7",
+            "8b98a5c650e0c8b1da0267bd5bb21a7e2af88b6a5fbd872e8fcf0c0e435e04c8",
+            "8ae91c4c0872eb41cecd335f27b459e0703ae3eb33a119025ef8ba681ce637c6",
+            "59cc91ffe2833dec698dc5c0c383080c6fb0207ee3b7ce5ea11f8d79e5e480f7",
+            "19970ae5c262623ea7e775caffeeb7b795d74ad6954d859c840a0df79bc958fe",
+            "48c4a9d5476d0c9a87cee7757c43b1ee3f8688e9d2828d0801235e50e0218537",
+            "e3c4e961b7e1fdb2ca74367587567f5b9f4a232b7c3ce9dfb7283da73c3d91d8",
+            "d44b9c0e2bad0b396da0e3a509d0b58545cd8572af03836e58990226a1fb7871",
+            "03d1f0a4a6f34c7a161a1a50dbeaf43e0258a7eb0bc0884df1a85b2960a44308"
+          ],
+          "validation": [
+            "b68832682a6adcb28b4abd132745a49552b986552987e48318b8747eecd6dde3"
+          ],
+          "test": [
+            "565310b6da8908929e25770cabf255afe3001fee5b675937643feea9c5bf27c1"
+          ]
+        },
+        "tokenizer": "fd5d5506481f47afb45ae5679a963d000139c5e0b70846e3adc85bca27773cac"
+      }
+    }
+  ]
+}

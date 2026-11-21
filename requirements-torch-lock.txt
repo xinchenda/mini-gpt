@@ -1,0 +1,5 @@
+# Versions exercised on macOS arm64, Python 3.12.15.
+# NVIDIA installations should choose the appropriate official PyTorch wheel.
+torch==2.15.0
+tokenizers==0.23.3
+numpy==2.5.4

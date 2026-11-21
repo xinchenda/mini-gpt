@@ -1,0 +1,44 @@
+{
+  "protocol": "native_context_strided_all_targets",
+  "stride": 16,
+  "context_v1": 64,
+  "context_v2": 256,
+  "torch_device": "mps",
+  "note": "Reserved before scoring; selected candidate versus frozen v1 baseline.",
+  "models": {
+    "v1": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+    "v2": "artifacts/v2"
+  },
+  "documents": {
+    "validation": {
+      "file": "wind_in_willows_body.txt",
+      "sha256": "207953fe0941bf515e578842c99f90d2f91556e9fcf2965407196bebe7e621c5",
+      "targets": 122362,
+      "bytes": 331727,
+      "whitespace_words": 58339,
+      "v1_bits_per_byte": 3.628830097714313,
+      "v2_bits_per_byte": 1.647404137057683,
+      "v1_word_perplexity": 1627515.5592392958,
+      "v2_word_perplexity": 660.5221542768556,
+      "v1_loss": 6.81908886725035,
+      "v2_loss": 3.0957071310525213,
+      "v1_perplexity": 915.1508062332091,
+      "v2_perplexity": 22.10286263327054
+    },
+    "blind_test": {
+      "file": "lost_world.txt",
+      "sha256": "c94e10ba01d8bd6d5c3df200cfcc7105a29c4af007c11c5b0892a7a465306b37",
+      "targets": 160518,
+      "bytes": 421367,
+      "whitespace_words": 75552,
+      "v1_bits_per_byte": 3.751194936159937,
+      "v2_bits_per_byte": 1.735815507410482,
+      "v1_word_perplexity": 1985518.320626908,
+      "v2_word_perplexity": 820.8376849669095,
+      "v1_loss": 6.8254591967345135,
+      "v2_loss": 3.158390358411413,
+      "v1_perplexity": 920.9992268016739,
+      "v2_perplexity": 23.53268623628713
+    }
+  }
+}

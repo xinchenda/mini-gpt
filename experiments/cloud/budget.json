@@ -1,0 +1,87 @@
+{
+  "total_cap_rmb": 50,
+  "pilot_cap_rmb": 1,
+  "training_cap_rmb": 35,
+  "evaluation_transfer_cap_rmb": 8,
+  "reserve_rmb": 6,
+  "prepared_train_tokens": 300001097,
+  "candidate_parameters": 46480384,
+  "status": "completed; platform powered off",
+  "instance": "a05746851a-6830735c",
+  "gpu": "RTX 4090D",
+  "gpu_count": 1,
+  "region": "cq-A1",
+  "hourly_price_rmb": 1.88,
+  "first_platform_shutdown": "2026-11-20T23:43:00+08:00",
+  "first_platform_estimate_rmb": 0.63,
+  "selected_parameters": 98032128,
+  "planned_training_tokens": 2000011264,
+  "measured_pilot_tokens_per_second": 99260.49156708382,
+  "estimated_training_rmb": 10.52231668679253,
+  "safety_factor": 1.3,
+  "conservative_training_rmb": 13.679011692830288,
+  "formal_platform_shutdown": "2026-11-21T07:30:00+08:00",
+  "remaining_platform_estimate_rmb_at_setting": 14.7,
+  "hard_training_seconds": 25200,
+  "startup_verified_metrics": {
+    "step": 1400,
+    "validation_loss": 4.942009449005127,
+    "tokens_per_second": 101550.485843774
+  },
+  "actual_total_rmb": 15.28,
+  "power_off_verified": true,
+  "shutdown_failure": {
+    "errno": 8,
+    "message": "Exec format error: /usr/bin/shutdown",
+    "training_evaluation_finished_at": "2026-11-21T04:49:13+08:00",
+    "platform_off_settled_at": "2026-11-21T07:30:07+08:00",
+    "estimated_idle_cost_rmb": 5.04,
+    "fix": "Direct command with ENOEXEC-only bash fallback; covered by local tests; no new paid GPU validation"
+  },
+  "historical_running_metrics": {
+    "step": 11100,
+    "total_steps": 122071,
+    "effective_training_tokens": 181862400,
+    "validation_loss": 3.6206377744674683,
+    "tokens_per_second": 101174.85574427237
+  },
+  "historical_first_settlement": {
+    "as_of": "2026-11-20T23:59:59+08:00",
+    "paid_rmb": 1.17,
+    "note": "Live running usage since settlement not yet included"
+  },
+  "actual_gpu_phase_rmb": 15.27,
+  "transfer_cpu_rmb": 0.01,
+  "final_settlement_at": "2026-11-21T18:03:17+08:00",
+  "file_transfer_recovery": "No-GPU mode 0.1 RMB/hour; verified partial prefix, 5 tail parts and final SHA256; instance stopped through console",
+  "latest_verified_metrics": {
+    "recorded_points": 1220,
+    "best": {
+      "step": 122000,
+      "train_loss": 2.966715097427368,
+      "validation_loss": 3.101383477449417,
+      "elapsed_seconds": 18391.54600938782,
+      "precision": "bf16",
+      "effective_training_tokens": 1998848000,
+      "peak_allocated_bytes": 10149069824,
+      "gradient_norm": 0.7060356736183167,
+      "lr": 6.000045147834185e-05,
+      "tokens_per_second": 108593.89411746788
+    },
+    "last": {
+      "step": 122071,
+      "train_loss": 3.030297040939331,
+      "validation_loss": 3.103647142648697,
+      "elapsed_seconds": 18402.139059577137,
+      "precision": "bf16",
+      "effective_training_tokens": 2000011264,
+      "peak_allocated_bytes": 10149069824,
+      "gradient_norm": 0.7045634984970093,
+      "lr": 5.9999999999999995e-05,
+      "tokens_per_second": 108594.59639611703
+    },
+    "completed_schedule": true,
+    "shutdown_command_failed": true,
+    "backup_platform_shutdown": "2026-11-21T07:30:00+08:00"
+  }
+}

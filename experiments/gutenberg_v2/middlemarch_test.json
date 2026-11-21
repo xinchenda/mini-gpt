@@ -1,0 +1,38 @@
+{
+  "text": "data/gutenberg_v2/middlemarch_body.txt",
+  "text_sha256": "4575372ba6b9347a7c5bc60399bdc3e732d33a60987e88aab41cb3ccf824008c",
+  "stride": 16,
+  "models": {
+    "base12": {
+      "weights": "experiments/checkpoints/seeds_width64_context64/seed42/best.safetensors",
+      "step": 9600,
+      "width": 64,
+      "layers": 2,
+      "loss_nat_per_token": 3.7003811313930655,
+      "continuation_ranking": {
+        "examples": 64,
+        "wins": 64,
+        "ties": 0,
+        "accuracy": 1.0,
+        "mean_nll_margin_per_token": 1.7589969597756863
+      }
+    },
+    "data27_w128_l4_20k": {
+      "weights": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+      "step": 20000,
+      "width": 128,
+      "layers": 4,
+      "loss_nat_per_token": 3.246891185656403,
+      "continuation_ranking": {
+        "examples": 64,
+        "wins": 64,
+        "ties": 0,
+        "accuracy": 1.0,
+        "mean_nll_margin_per_token": 2.167762577533722
+      }
+    }
+  },
+  "context": 64,
+  "tokens": 685212,
+  "scored_tokens": 685211
+}

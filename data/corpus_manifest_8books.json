@@ -1,0 +1,17 @@
+{
+  "name": "eight_books",
+  "train": [
+    "alice_body.txt",
+    "looking_glass_body.txt",
+    "oz_body.txt",
+    "secret_garden_body.txt",
+    "jungle_book_body.txt",
+    "treasure_island_body.txt",
+    "pride_prejudice_body.txt",
+    "frankenstein_body.txt"
+  ],
+  "validation": "wind_in_willows_body.txt",
+  "test": "anne_green_gables_body.txt",
+  "tokenizer_kind": "bpe",
+  "tokenizer_file": "bpe_tokenizer_8books.json"
+}

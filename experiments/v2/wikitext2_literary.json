@@ -1,0 +1,44 @@
+{
+  "protocol": "native_context_strided_all_targets",
+  "stride": 16,
+  "context_v1": 64,
+  "context_v2": 256,
+  "torch_device": "mps",
+  "note": "Reserved before scoring; selected candidate versus frozen v1 baseline.",
+  "models": {
+    "v1": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+    "v2": "artifacts/v2"
+  },
+  "documents": {
+    "validation": {
+      "file": "wind_in_willows_body.txt",
+      "sha256": "207953fe0941bf515e578842c99f90d2f91556e9fcf2965407196bebe7e621c5",
+      "targets": 122362,
+      "bytes": 331727,
+      "whitespace_words": 58339,
+      "v1_bits_per_byte": 3.628830097714313,
+      "v2_bits_per_byte": 1.6373798658617829,
+      "v1_word_perplexity": 1627515.5592392958,
+      "v2_word_perplexity": 634.9341512287326,
+      "v1_loss": 6.81908886725035,
+      "v2_loss": 3.0768700970019833,
+      "v1_perplexity": 915.1508062332091,
+      "v2_perplexity": 21.690407172041553
+    },
+    "blind_test": {
+      "file": "wikitext2_test.txt",
+      "sha256": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+      "targets": 602979,
+      "bytes": 1256449,
+      "whitespace_words": 241211,
+      "v1_bits_per_byte": 5.471996899985525,
+      "v2_bits_per_byte": 3.57177887574062,
+      "v1_word_perplexity": 380467658.22418326,
+      "v2_word_perplexity": 398746.7823227418,
+      "v1_loss": 7.90340034422915,
+      "v2_loss": 5.158847658724642,
+      "v1_perplexity": 2706.4696278060837,
+      "v2_perplexity": 173.96387430546784
+    }
+  }
+}

@@ -1,0 +1,39 @@
+{
+  "name": "paragraph_books_plus_wikitext2_train",
+  "train": [
+    "../v2_normalized/alice_body.txt",
+    "../v2_normalized/looking_glass_body.txt",
+    "../v2_normalized/oz_body.txt",
+    "../v2_normalized/secret_garden_body.txt",
+    "../v2_normalized/jungle_book_body.txt",
+    "../v2_normalized/treasure_island_body.txt",
+    "../v2_normalized/pride_prejudice_body.txt",
+    "../v2_normalized/frankenstein_body.txt",
+    "../v2_normalized/time_machine_body.txt",
+    "../v2_normalized/call_of_wild_body.txt",
+    "../v2_normalized/walden_body.txt",
+    "../v2_normalized/romeo_juliet_body.txt",
+    "../v2_normalized/tale_of_two_cities_body.txt",
+    "../v2_normalized/great_expectations_body.txt",
+    "../v2_normalized/david_copperfield_body.txt",
+    "../v2_normalized/wuthering_heights_body.txt",
+    "../v2_normalized/jane_eyre_body.txt",
+    "../v2_normalized/sense_sensibility_body.txt",
+    "../v2_normalized/emma_body.txt",
+    "../v2_normalized/moby_dick_body.txt",
+    "../v2_normalized/huckleberry_finn_body.txt",
+    "../v2_normalized/tom_sawyer_body.txt",
+    "../v2_normalized/war_of_the_worlds_body.txt",
+    "../v2_normalized/dorian_gray_body.txt",
+    "../v2_normalized/kidnapped_body.txt",
+    "../v2_normalized/a_persuasion_body.txt",
+    "../v2_normalized/dracula_body.txt",
+    "wiki_train.txt"
+  ],
+  "validation": [
+    "../v2_normalized/wind_in_willows_body.txt",
+    "wiki_valid.txt"
+  ],
+  "test": "wiki_test.txt",
+  "tokenizer_file": "../v2_normalized/tokenizer.json"
+}

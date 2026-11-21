@@ -1,0 +1,41 @@
+{
+  "review_date": "2026-11-21",
+  "sources": {
+    "nanogpt_model": {
+      "url": "https://raw.githubusercontent.com/karpathy/nanoGPT/3adf61e154c3fe3fca428ad6bc3818b27a3b8291/model.py",
+      "sha256": "7c01703240dbec5d554527dc666e35b3df8391d0b117fddc07afcf325a21d11c",
+      "bytes": 16345,
+      "status": "verified"
+    },
+    "nanogpt_train": {
+      "url": "https://raw.githubusercontent.com/karpathy/nanoGPT/3adf61e154c3fe3fca428ad6bc3818b27a3b8291/train.py",
+      "sha256": "413bd97b40bb400a2a0d01230e2946f056c263ebac1b7281c2367d964a123085",
+      "bytes": 14857,
+      "status": "verified"
+    },
+    "litgpt_pretrain": {
+      "url": "https://raw.githubusercontent.com/Lightning-AI/litgpt/5341568a65e918a85cb284fac038de2157eebf3f/litgpt/pretrain.py",
+      "sha256": "03964908724f48f6d4a07ab8abc7680c3e60996bdad51dbe33bbf1d2de709ca9",
+      "bytes": 21068,
+      "status": "verified"
+    },
+    "litgpt_license": {
+      "url": "https://raw.githubusercontent.com/Lightning-AI/litgpt/5341568a65e918a85cb284fac038de2157eebf3f/LICENSE.md",
+      "sha256": "ab89ceca19ca531005699095ca542f982fac92efd82f954f49ac17aa99a37cda",
+      "bytes": 11344,
+      "status": "verified"
+    },
+    "smollm_pretrain": {
+      "url": "https://raw.githubusercontent.com/huggingface/smollm/438be18dae658a638f3a6976fdf5190bb6d68619/text/pretraining/README.md",
+      "sha256": "c76fba507401f9e6fd888129bacc46757eedb57dd61ec8841934dfc0222a634d",
+      "bytes": 4096,
+      "status": "verified"
+    },
+    "nanochat_readme": {
+      "url": "https://raw.githubusercontent.com/karpathy/nanochat/92d63d4e8bb4df75c3b71618f31ddde2378b2bcd/README.md",
+      "sha256": "77b8dfce94f45ed7c29eecdbd52e4e4137a060036b38c250519341ba3270daca",
+      "bytes": 16570,
+      "status": "verified"
+    }
+  }
+}

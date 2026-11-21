@@ -7,3 +7,27 @@ exports/
 data/**/*.txt
 data/gutenberg_v2/audit.json
 data/gutenberg_v2/release_audit.json
+
+# Training states stay local; only inference artifacts are versioned.
+experiments/v2/**/*.pt
+experiments/v2/seed42/
+data/v2_holdout/*.txt
+
+data/benchmarks/*.jsonl
+
+data/v2_raw_control/
+
+artifacts/v2_raw_format/
+artifacts/v2_context64/
+
+data/web_cloud/
+*.download
+
+archive/
+experiments/checkpoints/
+experiments/**/*.pt
+experiments/**/*.safetensors
+experiments/cloud/**/*.bin
+
+# Cloud inference weights exceed Git's normal file-size limit: release assets only.
+artifacts/cloud/

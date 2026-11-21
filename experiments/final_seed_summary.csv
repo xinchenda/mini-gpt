@@ -1,0 +1,4 @@
+config,test_set,seeds,seed_count,mean_loss,sample_std_loss,min_loss,max_loss,mean_bits_per_char,std_bits_per_char
+bpe_12books_width64_layers2_context32_cosine,Anne,"42;43;44",3,3.680000,0.016371,3.662000,3.694000,2.115313,0.009410
+bpe_12books_width64_layers2_context64_cosine,Anne,"42;43;44",3,3.649667,0.004619,3.647000,3.655000,2.097877,0.002655
+bpe_12books_width64_layers2_context64_cosine,Sherlock,"42;43;44",3,3.585000,0.011269,3.578000,3.598000,2.021814,0.006356

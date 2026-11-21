@@ -1,0 +1,8 @@
+{
+  "command": "python -m unittest discover -s tests -v",
+  "date": "2026-11-21",
+  "tests": 22,
+  "passed": true,
+  "environment": "MacBook Air M4, CPU test paths; cloud BF16 execution evidenced separately",
+  "shutdown_fix_gpu_validation": false
+}

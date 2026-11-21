@@ -1,0 +1,130 @@
+{
+  "purpose": "Portable pretraining, capacity comparison and deployment correctness",
+  "candidates": [
+    {
+      "name": "small",
+      "config": "configs/v2-small.json",
+      "seed": 42,
+      "steps": 20000
+    },
+    {
+      "name": "medium",
+      "config": "configs/v2-medium.json",
+      "seed": 42,
+      "steps": 20000
+    },
+    {
+      "name": "large",
+      "config": "configs/v2-large.json",
+      "seed": 42,
+      "steps": 20000
+    }
+  ],
+  "target_tokens_per_update": 1024,
+  "optimizer": "AdamW, lr 0.001, weight_decay 0.1, warmup 100, cosine to 0.0001",
+  "selection": "Lowest fixed validation-window loss on Wind; never select on blind test",
+  "fresh_test": {
+    "gutenberg_id": 139,
+    "title": "The Lost World",
+    "start": "Mr. Hungerton",
+    "normalization": "paragraph unwrapping",
+    "purpose": "Final untouched book after the corpus expansion decision"
+  },
+  "caveats": [
+    "Capacity candidates change width, depth and heads jointly; comparison is a complete recipe comparison.",
+    "One main seed per recipe; conclusions about robustness need additional seeds.",
+    "Historical v1 release holdout is a regression set."
+  ],
+  "refinement": {
+    "condition": "If medium beats small on validation, initialize from its best checkpoint.",
+    "steps": 5000,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 3e-05,
+    "extra_target_tokens": 5120000,
+    "selection": "Compare original and refined checkpoint using the same validation windows."
+  },
+  "sampling_ablation": {
+    "initial_checkpoint": "medium_seed42/best.pt",
+    "steps": 5000,
+    "control_document_mixture": 0.0,
+    "candidate_document_mixture": 0.3,
+    "rationale": "Mix token-proportional sampling with uniform-over-valid-books sampling.",
+    "novelty": "A project-specific configuration of established mixture sampling, not a claimed new algorithm."
+  },
+  "public_benchmark": {
+    "task": "LAMBADA OpenAI",
+    "examples": 5153,
+    "metrics": [
+      "exact_last_word_accuracy",
+      "last_word_perplexity"
+    ],
+    "context": "v1 native 64; local v2 native 256 BPE tokens",
+    "stop_word_filter": false
+  },
+  "capacity_followup": {
+    "initial_checkpoint": "large_seed42/best.pt",
+    "steps": 5000,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 3e-05,
+    "rationale": "Best capacity candidate receives the same low-learning-rate refinement.",
+    "selection": "Use fixed validation windows to compare all final candidates before test scoring."
+  },
+  "initial_holdout": {
+    "gutenberg_id": 33,
+    "title": "The Scarlet Letter",
+    "start": "A throng of bearded men",
+    "role_after_diagnosis": "Historical evaluation / regression"
+  },
+  "format_ablation": {
+    "initial_checkpoint": "large_refined/best.pt",
+    "steps": 5000,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 3e-05,
+    "control": "Original wrapped training text",
+    "candidate": "Paragraph-normalized training text",
+    "validation": "Same paragraph-normalized Wind for both arms",
+    "benchmark_use": "LAMBADA first run diagnosed line-wrap bias; report this test-informed development."
+  },
+  "previous_final_book": {
+    "gutenberg_id": 77,
+    "title": "The House of the Seven Gables",
+    "start": "Halfway down a by-street of one of our New England towns",
+    "normalization": "Unwrap line breaks within paragraphs"
+  },
+  "context_extension": {
+    "initial_checkpoint": "large_normalized/best.pt",
+    "context": 256,
+    "initialization": "Tile learned position embeddings; preserve first 64 exactly",
+    "steps": 5000,
+    "batch_size": 4,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 3e-05,
+    "selection": "Same 1024 validation targets drawn from 256-token windows; score last 16"
+  },
+  "earlier_release_book": {
+    "gutenberg_id": 43,
+    "title": "The Strange Case of Dr. Jekyll and Mr. Hyde",
+    "start": "Mr. Utterson the lawyer",
+    "normalization": "paragraph unwrapping"
+  },
+  "mixed_corpus": {
+    "sources": "27 paragraph-normalized books plus official WikiText-2 training split",
+    "validation": "Wind plus official WikiText validation, fixed 256-token windows with suffix scoring",
+    "initial_checkpoint": "context256/best.pt",
+    "steps": 5000,
+    "batch_size": 4,
+    "learning_rate": 0.0003,
+    "min_learning_rate": 3e-05,
+    "scope_boundary": "Last local candidate in this release; select by mixed validation before final book test."
+  },
+  "cloud_candidate": {
+    "status": "preparing; no CUDA result yet",
+    "config": "configs/v2-cloud46m.json",
+    "data": "FineWeb-Edu pinned shard, 300M prepared train token cap",
+    "precision": "bf16",
+    "budget_rmb": 50,
+    "pilot_budget_rmb": 1,
+    "formal_budget_rmb": 35,
+    "selection": "Fixed validation; final token budget determined by measured throughput and cost"
+  }
+}

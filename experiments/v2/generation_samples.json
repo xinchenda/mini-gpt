@@ -1,0 +1,66 @@
+[
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.3770491803278688,
+    "text": "The old man opened the door and looked at him.\n\n\"I'm not going to see you,\" he said. \"I'm not going to be a bit o' boy. I'm not going to be a bit o' boy.\"\n\n\"I'm not going to be"
+  },
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "The old man opened the door and shook his head. He had dreadfully been locked and lifted up a pencil. Then he was in a bad pain.\n\n“I have no time to stop the boy,” said the waiter, “that is a"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.08196721311475408,
+    "text": "Alice looked at the door, and said, “I’m not going to believe you’re a good deal of me, and I’m a-going to go to the coach.”\n\n“I’m not going to be a bad thing,” said the Que"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "Alice looked at the lamp, and saw her dress.\n\n“Ask him,” she added, “and he is a bad lady of a bad man.”\n\nAnd he looked back in a big little puzz of lightning, in a whisper,"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.4918032786885246,
+    "text": "In the middle of the night, I was in the same way, and I was so much in the way of getting up, and I was so much in the way of getting up, and I was so much in the way of getting up, and I was so much interested in my mind.\n\nI"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.032786885245901676,
+    "text": "In the middle of the night, I received it from the village, and the monarch of the ladies of the sea, and the bread and pink, were the only current of the camp, and the village, the incident of the"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.016393442622950838,
+    "text": "She could not understand why she had been in the present circumstances of the country.\n\n“If you were to be aware,” said she, “I should have been a very good man.”\n\n“I am not afraid of it, but I am sure I"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "She could not understand why she could not bear to her daughter.\n\nAs she was very happy, she was very sorry to say, and though it did not possibly be civil, she could not help feeling a sensitive indifference"
+  }
+]

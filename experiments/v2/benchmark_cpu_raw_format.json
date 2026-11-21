@@ -1,0 +1,19 @@
+{
+  "device": "cpu",
+  "threads": 2,
+  "generated_tokens": 24,
+  "protocol": "5 runs median; 1 warmup per mode",
+  "parameters": 5017600,
+  "context_tokens": 64,
+  "prompt_tokens": 8,
+  "cache_overflow_rebuilds_expected": 0,
+  "uncached": {
+    "median_seconds": 0.028626083862036467,
+    "tokens_per_second": 838.3962024169322
+  },
+  "cached": {
+    "median_seconds": 0.01404808321967721,
+    "tokens_per_second": 1708.4181254267555
+  },
+  "identical_greedy_tokens": true
+}

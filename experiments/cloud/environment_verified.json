@@ -1,0 +1,14 @@
+{
+  "source": "Observed Jupyter terminal output from the authorized AutoDL instance",
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "driver": "580.76.05",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "bf16_supported": true,
+  "parameters": 46480384,
+  "synthetic_update_loss": 9.576911926269531,
+  "synthetic_gradient_norm": 1.638748288154602,
+  "peak_allocated_bytes": 1867057408,
+  "scope": "One synthetic BF16 forward/backward/AdamW update with batch 8 and context 512; not language-model quality or training throughput"
+}

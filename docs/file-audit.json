@@ -1,0 +1,29 @@
+{
+  "original_files": 382,
+  "verified_original_files": 382,
+  "missing": [],
+  "backed_up_before_replacement": [
+    ".github/workflows/tests.yml",
+    ".gitignore",
+    "MODEL_CARD.md",
+    "README.md",
+    "configs/experiment_plan.json",
+    "docs/v2-engineering.md",
+    "minigpt_v2/benchmark.py",
+    "minigpt_v2/data.py",
+    "minigpt_v2/evaluate.py",
+    "minigpt_v2/export.py",
+    "minigpt_v2/inference.py",
+    "minigpt_v2/prepare_holdout.py",
+    "minigpt_v2/train.py",
+    "prepare_corpus.py",
+    "requirements-torch.txt",
+    "tests/test_data.py",
+    "tests/test_resume.py",
+    "tests/test_service.py",
+    "tests/test_v2.py"
+  ],
+  "canonical_root": "/Users/liusichen/Documents/ChatGPT/\u5de5\u4f5c/mini-gpt",
+  "former_build_workspace": "/Users/liusichen/Documents/ChatGPT/\u5de5\u4f5c/mini-gpt/archive/build_workspace_2026-11-20",
+  "note": "Browser uploads completed; former build workspace archived without deletion"
+}

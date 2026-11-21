@@ -1,0 +1,20 @@
+设备 Device(gpu, 0)，训练 token 5,994,158，验证 token 127,960
+训练文本 alice_body.txt + looking_glass_body.txt + oz_body.txt + secret_garden_body.txt + jungle_book_body.txt + treasure_island_body.txt + pride_prejudice_body.txt + frankenstein_body.txt + time_machine_body.txt + call_of_wild_body.txt + walden_body.txt + romeo_juliet_body.txt + tale_of_two_cities_body.txt + great_expectations_body.txt + david_copperfield_body.txt + wuthering_heights_body.txt + jane_eyre_body.txt + sense_sensibility_body.txt + emma_body.txt + moby_dick_body.txt + huckleberry_finn_body.txt + tom_sawyer_body.txt + war_of_the_worlds_body.txt + dorian_gray_body.txt + kidnapped_body.txt + a_persuasion_body.txt + dracula_body.txt，验证文本 wind_in_willows_body.txt
+数据清单 gutenberg_v2_27books，最终测试保留 middlemarch_body.txt
+验证集未知字符 0 个，字符类型 []
+模型宽度 192，层数 4，参数量 2,186,368
+学习率调度 cosine，最高 0.003，最低 0.0003，warmup 300
+梯度裁剪 未启用
+Tokenizer bpe，词表 1024，固定验证窗口 64 个
+输入 token 示例 ['A', 'lice', 'Ġwas', 'Ġbeg', 'in', 'ning', 'Ġto', 'Ġget', 'Ġvery', 'Ġt', 'ired', 'Ġof', 'Ġs', 'itt', 'ing', 'Ġby', 'Ġher', 'Ġs', 'ister', 'Ġon', 'Ġthe', 'Ċ', 'b', 'an', 'k', ',', 'Ġand', 'Ġof', 'Ġha', 'ving', 'Ġnothing', 'Ġto', 'Ġdo', ':', 'Ġonce', 'Ġor', 'Ġtw', 'ice', 'Ġshe', 'Ġhad', 'Ġpe', 'ep', 'ed', 'Ġinto', 'Ċ', 'the', 'Ġb', 'ook', 'Ġher', 'Ġs', 'ister', 'Ġwas', 'Ġre', 'ad', 'ing', ',', 'Ġbut', 'Ġit', 'Ġhad', 'Ġno', 'Ġp', 'ic', 't', 'u']
+目标 token 示例 ['lice', 'Ġwas', 'Ġbeg', 'in', 'ning', 'Ġto', 'Ġget', 'Ġvery', 'Ġt', 'ired', 'Ġof', 'Ġs', 'itt', 'ing', 'Ġby', 'Ġher', 'Ġs', 'ister', 'Ġon', 'Ġthe', 'Ċ', 'b', 'an', 'k', ',', 'Ġand', 'Ġof', 'Ġha', 'ving', 'Ġnothing', 'Ġto', 'Ġdo', ':', 'Ġonce', 'Ġor', 'Ġtw', 'ice', 'Ġshe', 'Ġhad', 'Ġpe', 'ep', 'ed', 'Ġinto', 'Ċ', 'the', 'Ġb', 'ook', 'Ġher', 'Ġs', 'ister', 'Ġwas', 'Ġre', 'ad', 'ing', ',', 'Ġbut', 'Ġit', 'Ġhad', 'Ġno', 'Ġp', 'ic', 't', 'u', 'res']
+第 0 步  验证 loss 7.204
+Traceback (most recent call last):
+  File "/Users/liusichen/Documents/ChatGPT/工作/mini-gpt/train_text_mlx.py", line 533, in <module>
+    main()
+  File "/Users/liusichen/Documents/ChatGPT/工作/mini-gpt/train_text_mlx.py", line 441, in main
+    gradient_norm_value = float(gradient_norm.item())
+                                ^^^^^^^^^^^^^^^^^^^^
+RuntimeError: [metal::Device] Unable to load kernel steel_attention_float32_bq32_bk16_bd192_bv192_wm4_wn1_maskfloat32_align_Q_t_align_K_t_has_mask_n_do_causal_t_has_sinks_n_save_lse_t
+Threadgroup memory size (40448) exceeds the maximum threadgroup memory allowed (32768)
+

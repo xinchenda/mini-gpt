@@ -1,0 +1,29 @@
+{
+  "protocol": "same_strided_sliding_windows_v1",
+  "stride": 16,
+  "note": "Reserved before scoring; selected candidate versus frozen v1 baseline.",
+  "models": {
+    "v1": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+    "v2": "artifacts/v2"
+  },
+  "documents": {
+    "validation": {
+      "file": "wind_in_willows_body.txt",
+      "sha256": "b68832682a6adcb28b4abd132745a49552b986552987e48318b8747eecd6dde3",
+      "targets": 127960,
+      "v1_loss": 3.226352414268,
+      "v2_loss": 3.0024434479596875,
+      "v1_perplexity": 25.1876152220212,
+      "v2_perplexity": 20.134674895993626
+    },
+    "blind_test": {
+      "file": "scarlet_letter.txt",
+      "sha256": "ad15767ec47db9b8d5278ee971d44c98810a8b19c5d352e8d36858e307d0215c",
+      "targets": 154321,
+      "v1_loss": 3.2181951610320887,
+      "v2_loss": 2.9740600270550943,
+      "v1_perplexity": 24.98298919407417,
+      "v2_perplexity": 19.571218185226904
+    }
+  }
+}

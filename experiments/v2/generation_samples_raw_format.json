@@ -1,0 +1,66 @@
+[
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.19672131147540983,
+    "text": "The old man opened the door and looked at me.\n\n“I’m not aware,” said I, “and I’m not aware that I’m a going to be\nsafe. I’m not aware that I’m a-going to be a good deal of"
+  },
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "The old man opened the door and shook his head. He had dreadful\ncurses, and had fallen on the river. Then he stopped and looked at the\nduke’s wrinkled hands and held his head on the shoulder and shook his\n"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.08196721311475408,
+    "text": "Alice looked at the window, and then she said, “I’ll tell you what I\nwanted to do.”\n\n“I’ll tell you, sir,” said the King, “and I’ll tell you what I’ll do. I\nwish I’m a-g"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "Alice looked at the little girl, and she looked so\nwildly at her and said she was still, and then she answered:--\n\n“I didn’t know what to say, ‘I know, Master Copperfield,’ she added"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.09836065573770492,
+    "text": "In the middle of the night, I was in the midst of the\nmiddle of the coach, and I was in the middle of the country.\n\n“I’ve been awake,” said the Mock Turtle, “and I’m a-g"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "In the middle of the night, I reckon,\nthis is a pity I know.\n\nLADY CAPULET.\nThen, what’s the matter?\n\n [_C_Exit Paris of Dancote._]\n\n"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.06557377049180324,
+    "text": "She could not understand why she had been in the\nplace of her own room, and she was not at all in the same room.\n\nThere was a little laughing at the door, and she was not at all\nsurprised. She had been talking to the house, and"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "She could not understand why she could not bear to speak of. She could not\nsuppose she was not an apartment in any of the estimate, and that the\nday was at the Underland was drawn to her, and the girl she had read"
+  }
+]

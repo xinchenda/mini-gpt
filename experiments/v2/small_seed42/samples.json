@@ -1,0 +1,66 @@
+[
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.11475409836065575,
+    "text": "The old man opened the door and the door was\nsitting on the bed, and the bed was a big bit of a bit of a bit of\nblood.\n\n“If you are not a bit of a corner, I am sure you are not aware of\n"
+  },
+  {
+    "prompt": "The old man opened the door and",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "The old man opened the door and shining, and the\nfront of the rough and air; then, almost at the board of the ice of a\nswinging, the curate wall; and the post of the foreheads in the\nsails"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.2295081967213115,
+    "text": "Alice looked at the door, and she said, “I’ll tell you\nyou’ll be a bit of a bit. I’ll tell you what I’ll go to bed, and I’ll\nhave got to go to bed, and I’ll go to bed, and I"
+  },
+  {
+    "prompt": "Alice looked at the",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "Alice looked at the line, and then she\nthought.\n\n“Asker as you are, Miss Bennet, I am afraid it is so possible\nto you, and I can tell you that you must have been a kind of\nblot, if you have been"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.34426229508196726,
+    "text": "In the middle of the night, and the captain’s\nshamered, and the corner of the corner of the fire, and the corner\nof the corner of the fire, and the captain was a corner of the\nslight,"
+  },
+  {
+    "prompt": "In the middle of the night",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "In the middle of the night, and the portion of the\nlights of the ladies and law, and a general elegants of their breaths\nwould be so much in a big doud of the parlour, in the same case"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.11475409836065575,
+    "text": "She could not understand why, and she was\nsaid, and she was not quite uneasy. She was not quite aware that she\nhad been so much to believe her, and she was not very much more than\nshe had been in her own. She was not very much more than"
+  },
+  {
+    "prompt": "She could not understand why",
+    "temperature": 0.7,
+    "seed": 42,
+    "generated_tokens": 64,
+    "repeated_4gram_fraction": 0.0,
+    "text": "She could not understand why she was so much\nin her dream. She could have been the most uneasy, and so much\nmust be so long intimate to me, and she had not known the wrongest\nimportion of her. Halfestly, and her"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "source": "https://mirror.csclub.uwaterloo.ca/gutenberg/3/33/33-0.txt",
+  "title": "The Scarlet Letter",
+  "gutenberg_id": 33,
+  "raw_sha256": "f30e825a3f79aa9247844633456a7cd8a845f5fe1d03119977e6cd06551f6f35",
+  "body_sha256": "ad15767ec47db9b8d5278ee971d44c98810a8b19c5d352e8d36858e307d0215c",
+  "start_marker": "A throng of bearded men",
+  "characters": 393766,
+  "overlap_40_word_windows": {},
+  "caveat": "Exact normalized 40-word check; no semantic or shorter overlap detection"
+}

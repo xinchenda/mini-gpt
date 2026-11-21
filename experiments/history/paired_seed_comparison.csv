@@ -1,0 +1,7 @@
+config,seed,params,best_validation_loss,best_step
+width64_layers2_context32,42,234240,3.825578,9900
+width64_layers2_context32,43,234240,3.822589,9100
+width64_layers2_context32,44,234240,3.803186,8100
+width128_layers2_context32,42,664064,3.874098,9800
+width128_layers2_context32,43,664064,3.800923,9100
+width128_layers2_context32,44,664064,4.069199,9500

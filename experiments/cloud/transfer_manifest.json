@@ -1,0 +1,33 @@
+{
+  "prefix_bytes": 296992768,
+  "prefix_sha256": "bb0ef9da07af63104246ae3f9fb651c0455a9aef717c6979519816faad2949b6",
+  "zip_bytes": 365327134,
+  "zip_sha256": "eefca7dbcab57eb5605ddfa3ef398001581fdf32790ff2bfc868961cbd7b837d",
+  "parts": [
+    {
+      "name": "tail_00.bin",
+      "bytes": 16777216,
+      "sha256": "f3cc511c425f4a4e46fd2c860a458751a6f5c6a1c337a56fad1b521bb4cb74ed"
+    },
+    {
+      "name": "tail_01.bin",
+      "bytes": 16777216,
+      "sha256": "90c6f98e8a22bc4b1ab76b6c47670c01a71cbe6aebee121a15bb2255df09e539"
+    },
+    {
+      "name": "tail_02.bin",
+      "bytes": 16777216,
+      "sha256": "9564e628e583eccc473c98236a4f3560104b5b7ec72f32215841ec690a94f272"
+    },
+    {
+      "name": "tail_03.bin",
+      "bytes": 16777216,
+      "sha256": "85d6f745968f7c48ba6295c75e332a1d25b167461ec0d08476073f558a9c96de"
+    },
+    {
+      "name": "tail_04.bin",
+      "bytes": 1225502,
+      "sha256": "9795d82f901b8bd7f22e4d36dbf1f5b90a37f77059a62b200e207780bf7006c6"
+    }
+  ]
+}

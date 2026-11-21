@@ -1,0 +1,5 @@
+{
+  "base_context64_common_validation_loss": 3.0429772436618805,
+  "protocol": "Eight seeded batches of eight 256-token windows; score last 16 targets, identical positions",
+  "targets": 1024
+}

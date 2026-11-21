@@ -1,0 +1,30 @@
+{
+  "recorded_points": 1220,
+  "best": {
+    "step": 122000,
+    "train_loss": 2.966715097427368,
+    "validation_loss": 3.101383477449417,
+    "elapsed_seconds": 18391.54600938782,
+    "precision": "bf16",
+    "effective_training_tokens": 1998848000,
+    "peak_allocated_bytes": 10149069824,
+    "gradient_norm": 0.7060356736183167,
+    "lr": 6.000045147834185e-05,
+    "tokens_per_second": 108593.89411746788
+  },
+  "last": {
+    "step": 122071,
+    "train_loss": 3.030297040939331,
+    "validation_loss": 3.103647142648697,
+    "elapsed_seconds": 18402.139059577137,
+    "precision": "bf16",
+    "effective_training_tokens": 2000011264,
+    "peak_allocated_bytes": 10149069824,
+    "gradient_norm": 0.7045634984970093,
+    "lr": 5.9999999999999995e-05,
+    "tokens_per_second": 108594.59639611703
+  },
+  "completed_schedule": true,
+  "shutdown_command_failed": true,
+  "backup_platform_shutdown": "2026-11-21T07:30:00+08:00"
+}

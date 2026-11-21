@@ -1,0 +1,41 @@
+{
+  "protocol": "same_strided_sliding_windows_v1",
+  "stride": 16,
+  "note": "Reserved before scoring; selected candidate versus frozen v1 baseline.",
+  "models": {
+    "v1": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+    "v2": "artifacts/v2"
+  },
+  "documents": {
+    "validation": {
+      "file": "wind_in_willows_body.txt",
+      "sha256": "207953fe0941bf515e578842c99f90d2f91556e9fcf2965407196bebe7e621c5",
+      "targets": 122362,
+      "bytes": 331727,
+      "whitespace_words": 58339,
+      "v1_bits_per_byte": 3.628830097714313,
+      "v2_bits_per_byte": 1.6345211460349551,
+      "v1_word_perplexity": 1627515.5592392958,
+      "v2_word_perplexity": 627.8203254952425,
+      "v1_loss": 6.81908886725035,
+      "v2_loss": 3.071498155075579,
+      "v1_perplexity": 915.1508062332091,
+      "v2_perplexity": 21.57419997297219
+    },
+    "blind_test": {
+      "file": "seven_gables.txt",
+      "sha256": "c4955689e2e409dbd43647a97f383629cd19f615085e70c9ba5a0b31bab1b9cf",
+      "targets": 226709,
+      "bytes": 603339,
+      "whitespace_words": 102207,
+      "v1_bits_per_byte": 3.834284316219224,
+      "v2_bits_per_byte": 1.6519823954208261,
+      "v1_word_perplexity": 6509863.8779622065,
+      "v2_word_perplexity": 862.1715525584864,
+      "v1_loss": 7.072979706414143,
+      "v2_loss": 3.047358253726554,
+      "v1_perplexity": 1179.657836584214,
+      "v2_perplexity": 21.059636655390857
+    }
+  }
+}

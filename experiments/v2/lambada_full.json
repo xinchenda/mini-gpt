@@ -1,0 +1,24 @@
+{
+  "task": "LAMBADA OpenAI",
+  "examples": 5153,
+  "source": "https://openaipublic.blob.core.windows.net/gpt-2/data/lambada_test.jsonl",
+  "device": "mps",
+  "sha256": "4aa8d02cd17c719165fc8a7887fddd641f43fcafa4b1c806ca8abc31fabdb226",
+  "context_tokens": 256,
+  "v1_context_tokens": 64,
+  "filter_stop_words": false,
+  "protocol": "Last word including leading space; full target greedy exact match; sliding context",
+  "task_spec": "https://github.com/EleutherAI/lm-evaluation-harness/blob/main/lm_eval/tasks/lambada/lambada_openai.yaml",
+  "models": {
+    "v2": {
+      "accuracy": 0.0009703085581214826,
+      "correct": 5,
+      "last_word_perplexity": 846535.3882559547
+    },
+    "v1": {
+      "accuracy": 0.0,
+      "correct": 0,
+      "last_word_perplexity": 2691463589.222389
+    }
+  }
+}

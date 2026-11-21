@@ -1,0 +1,12 @@
+{
+  "source": "https://mirror.csclub.uwaterloo.ca/gutenberg/7/77/77-0.txt",
+  "title": "The House of the Seven Gables",
+  "gutenberg_id": 77,
+  "normalized": true,
+  "raw_sha256": "6548523dd4b8843c2d24d845249b226bec2383000c690e54853bfc10a0684b2d",
+  "body_sha256": "c4955689e2e409dbd43647a97f383629cd19f615085e70c9ba5a0b31bab1b9cf",
+  "start_marker": "Halfway down a by-street of one of our New England towns",
+  "characters": 595451,
+  "overlap_40_word_windows": {},
+  "caveat": "Exact normalized 40-word check; no semantic or shorter overlap detection"
+}

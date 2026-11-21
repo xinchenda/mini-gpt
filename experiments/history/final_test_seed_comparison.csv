@@ -1,0 +1,7 @@
+config,seed,params,best_validation_loss,best_step
+Anne,42,236288,3.647,9600
+Anne,43,236288,3.647,8500
+Anne,44,236288,3.655,9200
+Sherlock,42,236288,3.579,9600
+Sherlock,43,236288,3.598,8500
+Sherlock,44,236288,3.578,9200

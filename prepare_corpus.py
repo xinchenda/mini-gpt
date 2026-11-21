@@ -23,9 +23,30 @@ def prepare_book(source, download, directory=SOURCES.parent):
     ebook, name, marker = source
     url = f"https://www.gutenberg.org/cache/epub/{ebook}/pg{ebook}.txt"
     raw_path = directory / ("alice.txt" if name == "alice" else f"{name}_raw.txt")
+    source_record = raw_path.with_suffix(".source.json")
     if download and not raw_path.exists():
-        with urlopen(url, timeout=30) as response:
-            raw_path.write_bytes(response.read())
+        prefix = "/".join(str(ebook)[:-1])
+        mirror = f"https://mirror.csclub.uwaterloo.ca/gutenberg/{prefix}/{ebook}/{ebook}-0.txt"
+        errors = []
+        for candidate in (url, mirror):
+            try:
+                with urlopen(candidate, timeout=30) as response:
+                    content = response.read()
+                decoded = content.decode("utf-8-sig")
+                if not re.search(rf"\[ebook\s+#0*{ebook}\]", decoded[:4096], re.IGNORECASE):
+                    raise ValueError("Downloaded book ID does not match")
+                prepare_text(decoded, marker)
+                temporary = raw_path.with_suffix(".download")
+                temporary.write_bytes(content)
+                temporary.replace(raw_path)
+                source_record.write_text(json.dumps(
+                    {"download_url": candidate, "raw_sha256": hashlib.sha256(content).hexdigest()},
+                    indent=2))
+                break
+            except (OSError, ValueError) as error:
+                errors.append(f"{candidate}: {error}")
+        else:
+            raise ValueError("All download sources failed: " + "; ".join(errors))
     raw = raw_path.read_text(encoding="utf-8-sig")
     if not re.search(rf"\[ebook\s+#0*{ebook}\]", raw[:4096], re.IGNORECASE):
         raise ValueError(f"{raw_path.name} 与清单中的 Gutenberg ID {ebook} 不符")
@@ -36,7 +57,8 @@ def prepare_book(source, download, directory=SOURCES.parent):
         raise ValueError(f"{body_path.name} 已存在且正文不同，请保留旧版后另行检查")
     if not body_path.exists():
         body_path.write_text(content, encoding="utf-8")
-    return body_path, {"ebook": ebook, "url": url, "start_marker": marker}
+    downloaded = json.loads(source_record.read_text()) if source_record.exists() else {}
+    return body_path, {"ebook": ebook, "url": url, "start_marker": marker, **downloaded}
 
 
 def audit(manifest, provenance):

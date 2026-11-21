@@ -1,0 +1,11 @@
+{
+  "python": "3.12.3",
+  "torch": "2.8.0+cu128",
+  "cuda": "12.8",
+  "gpu": "NVIDIA GeForce RTX 4090 D",
+  "bf16": true,
+  "parameters": 46480384,
+  "loss": 9.576911926269531,
+  "gradient_norm": 1.638748288154602,
+  "peak_allocated_bytes": 1887057408
+}

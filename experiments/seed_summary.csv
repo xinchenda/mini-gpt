@@ -1,0 +1,4 @@
+config,seeds,seed_count,mean_best_loss,sample_std_best_loss,min_best_loss,max_best_loss,mean_best_step,mean_bits_per_char,std_bits_per_char
+bpe_12books_width128_layers2_context32_cosine,"42;43;44",3,3.914740,0.138679,3.800923,4.069199,9466.666667,2.228755,0.078953
+bpe_12books_width64_layers2_context32_cosine,"42;43;44",3,3.817118,0.012157,3.803186,3.825578,9033.333333,2.173176,0.006921
+bpe_12books_width64_layers2_context64_cosine,"42;43;44",3,3.743311,0.013288,3.730268,3.756831,9100.000000,2.131156,0.007565

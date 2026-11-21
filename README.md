@@ -1,61 +1,69 @@
-# MiniGPT 本机预训练 v1
+# MiniGPT：单卡语言模型预训练与评测
 
-这是一个从随机权重训练的英文文学续写模型。交付目标是把源数据、训练、权重恢复、独立评估和推理串起来，在 M4 MacBook Air 16 GB 上重跑。模型在固定的 27 本训练书上学习预测下一个 BPE token。
+从字符级学习实验发展到约 98M 参数的英文 GPT 类语言模型，记录数据处理、受控对照、可恢复训练、公开任务评测、模型导出和云端费用。本轮云端预训练已完成，实付 15.28 元。
 
-## 验收记录
+| 实测项目 | 结果 |
+| --- | --- |
+| 参数量 | 98,032,128，12 层、宽度 768、12 头 |
+| 上下文 / 词表 | 512 token / 16,384 Byte-Level BPE |
+| 训练数据 / 累计目标 | 约 3 亿准备 token / 约 20 亿累计训练目标 |
+| 完成训练 | 122,071 步，单张 RTX 4090D，BF16 |
+| 最佳固定开发窗口 loss | 3.10138，第 122,000 步 |
+| LAMBADA OpenAI | 896/5153，准确率 17.39%，最后词 PPL 206.79 |
 
-| 环节 | 验收证据 |
-|---|---|
-| 数据 | 27 本训练书，5,994,158 个 BPE token。开发书《柳林风声》，本轮最终测试《看得见风景的房间》。来源、正文切点、SHA256 和长段落精确重复报告均已记录。 |
-| 训练 | 宽度 128、4 层、20,000 次 AdamW 更新、1,024 词表。64 与 128 上下文均处理 20,480,000 个训练目标。 |
-| 恢复 | 同一 40 步任务比较连续训练与从第 20 步恢复。两者验证 loss 都为 6.062033，最大参数绝对差约 0.0000612，低于检查阈值 0.001。 |
-| 选择 | 《柳林风声》固定目标位置上，64 方案 loss 3.2245，128 方案读取原生上下文时 3.2390。据此选择 64 方案。 |
-| 留出评估 | 新留出书同一批目标上，64 与 128 方案分别为 3.1944 和 3.2182。所选模型整书 loss 3.1890。 |
-| 生成 | 权重可用相同词表加载并生成，示例见 `experiments/gutenberg_v2/generation.txt`。长段落仍有跳跃、重复与语法错误。 |
+开发窗口分数不是完整验证集分数。公开任务污染尚未审查，LAMBADA 也曾用于前期诊断。模型用于英文续写与训练工程复现，输出仍会出错，未完成指令微调，不能视为通用助手或企业生产模型。
 
-## 为什么保留 64 token
+## 阅读入口
 
-64 方案每步抽 16 个长度 64 的窗口。128 方案每步抽 8 个长度 128 的窗口。两者 token 预算和优化器步数匹配。窗口数量、位置嵌入参数与注意力计算量随之变化，所以这是两套本机训练方案的对照。
+| 文档 | 内容 |
+| --- | --- |
+| [结项记录](docs/CLOSEOUT.md) | 实际结果、费用、关机故障与恢复 |
+| [完整训练记录](docs/TRAINING_GUIDE.md) | 从梯度练习、MLX 到 PyTorch 和云端的阶段演进 |
+| [云端操作记录](docs/CLOUD_TRAINING.md) | 平台选择、数据传输、测速、预算与训练命令 |
+| [模型卡](MODEL_CARD.md) | 模型、数据、评测及适用范围 |
+| [开源方案审查](docs/OPEN_SOURCE_REVIEW.md) | 官方实现对照、现有差异与改进优先级 |
+| [文件索引](docs/FILE_INDEX.md) | 发布内容、训练状态与历史文件的位置 |
+| [本机 v2 结果](docs/results.md) | 约 507 万参数的前序模型及对照 |
+| [MLX v1](docs/v1-release.md) | 最初 27 本书训练记录 |
 
-单独比较训练时的固定窗口 loss 会混入评估位置变化。`evaluate_context.py` 从同一本书取 1,024 个位置，每段只给末尾 16 个目标打分，两组回答的是同一批问题。对 128 模型还替换最早的 64 token，保留位置及近处文字。在新留出书上，真实远处文字相比替换后的 loss 为 3.2182 对 3.2229，说明该模型能利用一点远处信息。这个收益在本轮没有使 128 方案超过 64 方案。该对照使用 seed 42。模型规模与数据类型适合演示本机预训练流程，能力评估覆盖英文文学续写。
-
-## VS Code 复现
-
-打开仓库根目录。实验使用 Python 3.12.15、MLX 0.32.4、tokenizers 0.23.3。
+## 运行环境与验证
 
 ```bash
 python3.12 -m venv .venv
-.venv/bin/python -m pip install -r requirements.txt
-.venv/bin/python prepare_corpus.py --download
+.venv/bin/python -m pip install -r requirements-torch.txt
+.venv/bin/python -m unittest discover -s tests -v
 ```
 
-下载文件来自 Project Gutenberg。比较重建的 `data/gutenberg_v2/release_audit.json` 中的 SHA256 与 `experiments/context128/corpus_reference.json`。若上游版本变化，指纹就会变化。交付包包含语料配方和词表。
+Windows 使用 `.venv/Scripts/python.exe`。CUDA 训练实测环境为 Python 3.12.3、PyTorch 2.8.0+cu128、RTX 4090D。详细依赖见 [云端环境](experiments/cloud/cloud_requirements.txt)；Mac 实测依赖另外保留。
+
+## 获取云端模型
+
+大权重通过本仓库版本附件分发，代码仓库保留配置、数据配方和实验记录。私有仓库需要先登录 GitHub CLI：
 
 ```bash
-model=experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors
-.venv/bin/python generate.py "$model" --bpe-path data/bpe_tokenizer_12books.json \
-  --prompt 'The old man opened the door and' --count 48 --temperature 0.7 --top-k 20 --seed 42
-.venv/bin/python evaluate_text.py data/gutenberg_v2/room_with_view_body.txt \
-  --bpe-path data/bpe_tokenizer_12books.json --model context64 "$model" \
-  --output experiments/context128/recheck.json
+gh release download v2.0.0 --repo xinchenda/mini-gpt --pattern minigpt-cloud98m.zip --dir exports
+python -m zipfile -e exports/minigpt-cloud98m.zip .
+python -m minigpt_v2.inference artifacts/cloud --prompt "The old man opened the door and" --count 64
+python -m minigpt_v2.serve artifacts/cloud
 ```
 
-从随机权重重训时，在新目录保存权重，避免覆盖交付结果。将 `context=64 batch=16` 改为 `context=128 batch=8` 可重跑对照。
+推理包校验权重、词表、配置及来源记录的 SHA256。完整优化器状态另行保存，不混入推理包。旧本机模型包 `artifacts/v2/` 与 `artifacts/v2_literary/` 保留，便于复核演进。
+
+## 训练复现
 
 ```bash
-context=64 batch=16
-run="experiments/reproduce_ctx${context}"
-.venv/bin/python train_text_mlx.py --manifest data/corpus_manifest_27books.json \
-  --width 128 --layers 4 --context-length "$context" --batch-size "$batch" \
-  --seed 42 --steps 20000 --lr-schedule cosine --learning-rate 0.003 \
-  --min-learning-rate 0.0003 --warmup-steps 300 --checkpoint-every 5000 \
-  --checkpoint-dir "$run/periodic" --save "$run/final.safetensors" \
-  --best-save "$run/best.safetensors" --log-file "$run/training.csv" \
-  --metrics-file "$run/metrics.csv"
+python -m pip install -r requirements-cloud.txt
+python -m minigpt_v2.prepare_web --output data/web_cloud --max-train-tokens 300000000
+python -m minigpt_v2.train \
+  --manifest data/web_cloud/manifest.json --config configs/v2-cloud98m.json \
+  --output experiments/my_cloud --steps 122071 --batch-size 32 \
+  --device cuda --precision bf16 --learning-rate 0.0006 --min-learning-rate 0.00006
 ```
 
-评估明细在 `experiments/context128/wind.json`、`release_test.json` 和 `release_full.json`。续训验证见同目录中的 `resume_check/comparison.json`。在 M4 上，历史 64 和本轮 128 的实测训练时间分别约 311 和 286 秒，MLX 峰值分别为 177.7 和 256.4 MB。这些是各自运行观测，整机内存和速度会受环境影响。
+实际运行先完成 100 步 pilot，再用相同协议恢复。`--resume` 恢复模型、优化器、采样器和 RNG，要求数据指纹与训练协议一致；`--init` 用于另开训练阶段。云服务器必须另设平台关机时限，训练程序退出不代表停止计费。
 
-## v1 结束条件
+## 工程与结果边界
 
-从语料重建到训练、恢复、生成和留出测试的流程均有日志或权重可复核。后续如要做指令问答、业务任务或更大规模训练，先为那个目标单独设评估和预算。
+测试覆盖因果性、KV-cache、目标评分覆盖、训练恢复、数据分离、模型包完整性、HTTP 边界与预算/关机处理。CPU 的连续与中断恢复通过逐参数一致性测试，未声称 GPU 位级一致性。HTTP 默认仅监听本机，不提供生产 SLA。
+
+项目使用 Codex 辅助实现与验证。开源资料的对照、未采用的设计和真实故障均保留记录；未将成熟设计或一次实验包装为原创算法。数据正文按官方来源配方重建，不提交原始网页或书籍正文。

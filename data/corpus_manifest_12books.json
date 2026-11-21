@@ -1,0 +1,21 @@
+{
+  "name": "twelve_books",
+  "train": [
+    "alice_body.txt",
+    "looking_glass_body.txt",
+    "oz_body.txt",
+    "secret_garden_body.txt",
+    "jungle_book_body.txt",
+    "treasure_island_body.txt",
+    "pride_prejudice_body.txt",
+    "frankenstein_body.txt",
+    "time_machine_body.txt",
+    "call_of_wild_body.txt",
+    "walden_body.txt",
+    "romeo_juliet_body.txt"
+  ],
+  "validation": "wind_in_willows_body.txt",
+  "test": "anne_green_gables_body.txt",
+  "tokenizer_kind": "bpe",
+  "tokenizer_file": "bpe_tokenizer_12books.json"
+}

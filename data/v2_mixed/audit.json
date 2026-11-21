@@ -1,0 +1,20 @@
+{
+  "train": {
+    "source": "https://raw.githubusercontent.com/pytorch/examples/acc295dc7b90714f1bf47f06004fc19a7fe235c4/word_language_model/data/wikitext-2/train.txt",
+    "sha256": "9e9fa1ad55b1c2c95b08e37dd8e653f638fac2c6de904b79e813611eefbc985f",
+    "bytes": 10797148,
+    "repository_commit": "acc295dc7b90714f1bf47f06004fc19a7fe235c4"
+  },
+  "valid": {
+    "source": "https://raw.githubusercontent.com/pytorch/examples/acc295dc7b90714f1bf47f06004fc19a7fe235c4/word_language_model/data/wikitext-2/valid.txt",
+    "sha256": "f0737ed31fc1329026e95cb8b98e19c2a182c39c240ab909dc31abf2f8af58e8",
+    "bytes": 1121681,
+    "repository_commit": "acc295dc7b90714f1bf47f06004fc19a7fe235c4"
+  },
+  "test": {
+    "source": "https://raw.githubusercontent.com/pytorch/examples/acc295dc7b90714f1bf47f06004fc19a7fe235c4/word_language_model/data/wikitext-2/test.txt",
+    "sha256": "d790b833ef8cf03a90db7bf1271b7520b83c45ce07ba3c1a9699df81e239eca0",
+    "bytes": 1256449,
+    "repository_commit": "acc295dc7b90714f1bf47f06004fc19a7fe235c4"
+  }
+}

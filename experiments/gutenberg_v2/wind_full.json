@@ -1,0 +1,66 @@
+{
+  "text": "data/wind_in_willows_body.txt",
+  "text_sha256": "32be80053f26bbe47242bf7605f2c28758a0af219820ab1a098286d53e50a671",
+  "stride": 16,
+  "models": {
+    "base12": {
+      "weights": "experiments/checkpoints/seeds_width64_context64/seed42/best.safetensors",
+      "step": 9600,
+      "width": 64,
+      "layers": 2,
+      "loss_nat_per_token": 3.612207107341821,
+      "continuation_ranking": {
+        "examples": 64,
+        "wins": 61,
+        "ties": 0,
+        "accuracy": 0.953125,
+        "mean_nll_margin_per_token": 1.362838737666607
+      }
+    },
+    "data27_small": {
+      "weights": "experiments/gutenberg_v2/data27_small/best.safetensors",
+      "step": 9400,
+      "width": 64,
+      "layers": 2,
+      "loss_nat_per_token": 3.544159932679447,
+      "continuation_ranking": {
+        "examples": 64,
+        "wins": 62,
+        "ties": 0,
+        "accuracy": 0.96875,
+        "mean_nll_margin_per_token": 1.3924217894673347
+      }
+    },
+    "data27_w128_l4": {
+      "weights": "experiments/gutenberg_v2/data27_w128_l4/best.safetensors",
+      "step": 9900,
+      "width": 128,
+      "layers": 4,
+      "loss_nat_per_token": 3.31443876020934,
+      "continuation_ranking": {
+        "examples": 64,
+        "wins": 62,
+        "ties": 0,
+        "accuracy": 0.96875,
+        "mean_nll_margin_per_token": 1.4715212248265743
+      }
+    },
+    "data27_w128_l4_20k": {
+      "weights": "experiments/gutenberg_v2/data27_w128_l4_20k/best.safetensors",
+      "step": 20000,
+      "width": 128,
+      "layers": 4,
+      "loss_nat_per_token": 3.2263706512906696,
+      "continuation_ranking": {
+        "examples": 64,
+        "wins": 64,
+        "ties": 0,
+        "accuracy": 1.0,
+        "mean_nll_margin_per_token": 1.643600346520543
+      }
+    }
+  },
+  "context": 64,
+  "tokens": 127960,
+  "scored_tokens": 127959
+}
